@@ -108,15 +108,19 @@ const RightMiddle = styled.div`
 const Skills = styled.div``;
 const Education = styled.div``;
 const Volunteer = styled.div``;
-const Contact: React.StatelessComponent<{
-  icon: IconProp;
-  item: string;
-}> = props => {
-  const { item, icon } = props;
+
+type ContactProps = { icon: IconProp; item: string; isLink?: boolean };
+const Contact: React.StatelessComponent<ContactProps> = props => {
+  const { item, icon, isLink } = props;
+  const Content = isLink ? (
+    <ContactLink href={item}> {item} </ContactLink>
+  ) : (
+    <ContactMethod>{item}</ContactMethod>
+  );
   return (
     <ContactContainer>
       <ContactIcon icon={icon} />
-      <ContactMethod> {item} </ContactMethod>
+      {Content}
     </ContactContainer>
   );
 };
@@ -143,7 +147,7 @@ const App = (props: AppProps) => {
         <ContactsContainer>
           <Contact item={resume.basics.email} icon="envelope" />
           <Contact item={resume.basics.phone} icon="phone" />
-          <Contact item={resume.basics.github} icon={['fab', 'github']} />
+          <Contact item={resume.basics.github} icon={['fab', 'github']} isLink />
           <ContactLink href={resume.basics.github} />
         </ContactsContainer>
       </Top>
