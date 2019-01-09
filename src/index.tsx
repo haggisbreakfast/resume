@@ -47,7 +47,7 @@ const Top = styled.div`
 `;
 const Header = styled.h3`
   color: #36454f;
-  font-weight: bolder;
+  font-weight: 900;
   border-bottom: solid #c1fff3;
 `;
 const NameContainer = styled.div`
