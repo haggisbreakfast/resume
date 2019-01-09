@@ -29,9 +29,8 @@ export type ResumeProject = {
   summary: string;
 };
 export type ResumeSkill = {
-  languages: string;
-  frameworks: string;
-  databases: string;
+  title: string;
+  skills: string;
 };
 export type ResumeVolunteer = {
   organization: string;
@@ -143,10 +142,16 @@ export const resume: Resume = {
 
   skills: [
     {
-      languages: 'Languages: Javascript, HTML, CSS, Sass',
-      frameworks:
-        'Frameworks, Libraries & Environments: ReactJS, NodeJS, Express, jQuery, EJS',
-      databases: 'Databases: PostgreSQL, MongoDB',
+      title: 'Languages',
+      skills: 'Javascript, TypeScript, HTML, CSS, Sass',
+    },
+    {
+      title: 'Frameworks, Libraries & Environments',
+      skills: 'ReactJS, NodeJS, Express, jQuery, EJS',
+    },
+    {
+      title: 'Databases',
+      skills: 'PostgreSQL, MongoDB',
     },
   ],
 };
