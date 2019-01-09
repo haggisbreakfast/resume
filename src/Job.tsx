@@ -1,13 +1,39 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import styled, { createGlobalStyle } from "styled-components";
-import { ResumeJob } from "./resume";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import styled, { createGlobalStyle } from 'styled-components';
+import { ResumeJob } from './resume';
 
-const JobContainer = styled.div``;
-const Company = styled.p``;
-const Position = styled.p``;
+const JobContainer = styled.div`
+  // display: flex;
+  // flex-direction: column;
+  // margin-bottom: 30px;
+`;
+const TitleContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  @media (max-width: 780px) {
+    height: 60px;
+  }
+`;
+const Company = styled.p`
+  font-size: 18px;
+  font-weight: 800;
+`;
+const Position = styled.p`
+  margin-top: 0px;
+  padding-top: 0px;
+`;
+const DateContainer = styled.div`
+  flex-direcion: row;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+`;
 const Date = styled.p``;
-const Duties = styled.p``;
+const Duties = styled.p`
+  font-size: 14px;
+`;
 
 type JobProps = {
   job: ResumeJob;
@@ -17,10 +43,13 @@ export const Job = (props: JobProps) => {
   const { job } = props;
   return (
     <JobContainer>
-      <Company>{job.company}</Company>
+      <TitleContainer>
+        <Company>{job.company}</Company>
+        <DateContainer>
+          <Date>{job.startDate}</Date> -<Date>{job.endDate}</Date>
+        </DateContainer>
+      </TitleContainer>
       <Position>{job.position}</Position>
-      <Date>{job.startDate}</Date>
-      <Date>{job.endDate}</Date>
       <Duties>{job.summary}</Duties>
     </JobContainer>
   );

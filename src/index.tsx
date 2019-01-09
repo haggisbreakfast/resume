@@ -28,10 +28,9 @@ export const GlobalStyle = createGlobalStyle`
   // @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,500|Roboto');
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
   body {
-    // font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
-    // font-weight: lighter;
       color: grey;
+      margin: auto;
 
   }
 `;
@@ -49,15 +48,13 @@ const Top = styled.div`
 const Header = styled.h3`
   color: #36454f;
   font-weight: bolder;
-  margin: auto;
-  padding: 10px;
   border-bottom: solid #c1fff3;
 `;
 const NameContainer = styled.div`
   // display: flex;
   // flex-direction: column;
   align-items: flex-start;
-  padding: 50px 0px 50px 0px;
+  padding: 10px 0px 50px 0px;
   // align-content: flex-start
 `;
 
@@ -67,12 +64,23 @@ const Name = styled.h1`
 `;
 const Label = styled.p`
   margin: 0px;
+  font-size: 20px;
 `;
-const Contact = styled.div``;
-const ContactItemContainer = styled.div``;
-const ContactItem = styled.p``;
+const ContactsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+`;
+const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+const ContactMethod = styled.p``;
 const ContactLink = styled.a``;
-const FeatureIcon = styled(FontAwesomeIcon)``;
+const ContactIcon = styled(FontAwesomeIcon)`
+  padding-right: 10px;
+`;
 
 const Summary = styled.div`
   font-size: 16px;
@@ -88,7 +96,10 @@ const LeftMiddle = styled.div`
   margin: 20px;
 `;
 const Projects = styled.div``;
-const Work = styled.div``;
+const Work = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 // const Job = styled.p``;
 const RightMiddle = styled.div`
   width: 25%;
@@ -97,20 +108,18 @@ const RightMiddle = styled.div`
 const Skills = styled.div``;
 const Education = styled.div``;
 const Volunteer = styled.div``;
-// const Contact: React.StatelessComponent<{
-//   // these are telling typescript what the props are
-//   icon: IconProp;
-//   item: string;
-// }> = props => {
-//   // Grab out the props we want.
-//   const { item, icon } = props;
-//   return (
-//     <ContactItemContainer>
-//       <ContactIcon icon={icon} size="2x" />
-//       <ContactMethod>{item}</ContactMethod>
-//     </ContactItemContainer>
-//   );
-// };
+const Contact: React.StatelessComponent<{
+  icon: IconProp;
+  item: string;
+}> = props => {
+  const { item, icon } = props;
+  return (
+    <ContactContainer>
+      <ContactIcon icon={icon} />
+      <ContactMethod> {item} </ContactMethod>
+    </ContactContainer>
+  );
+};
 
 /// /hi/ // the type of const resume = {....}
 // This is the shape of Props going into App component
@@ -131,23 +140,12 @@ const App = (props: AppProps) => {
           <Name>{resume.basics.name}</Name>
           <Label>{resume.basics.label}</Label>
         </NameContainer>
-        <Contact>
-          <ContactItemContainer>
-            <FeatureIcon icon="envelope" />
-            <ContactItem>{resume.basics.email}</ContactItem>
-          </ContactItemContainer>
-          <ContactItemContainer>
-            <FeatureIcon icon="phone" />
-            <ContactItem> {resume.basics.phone} </ContactItem>
-          </ContactItemContainer>
-          <ContactItemContainer>
-            <FeatureIcon icon={['fab', 'github']} />
-            <ContactLink href={resume.basics.github}>
-              {' '}
-              {resume.basics.github}{' '}
-            </ContactLink>
-          </ContactItemContainer>
-        </Contact>
+        <ContactsContainer>
+          <Contact item={resume.basics.email} icon="envelope" />
+          <Contact item={resume.basics.phone} icon="phone" />
+          <Contact item={resume.basics.github} icon={['fab', 'github']} />
+          <ContactLink href={resume.basics.github} />
+        </ContactsContainer>
       </Top>
       <Summary>
         <Header>Profile</Header>
@@ -157,7 +155,7 @@ const App = (props: AppProps) => {
         <LeftMiddle>
           <Projects>
             <Header>Projects</Header>
-            {resume.projects.map((p) => {
+            {resume.projects.map(p => {
               /**
                * In the end this should probs look like
                * return <Project project={p} />
@@ -168,7 +166,7 @@ const App = (props: AppProps) => {
           </Projects>
           <Work>
             <Header>Employment</Header>
-            {resume.work.map((w) => {
+            {resume.work.map(w => {
               return <Job job={w} />;
             })}
           </Work>
@@ -176,13 +174,13 @@ const App = (props: AppProps) => {
         <RightMiddle>
           <Skills>
             <Header>Skills</Header>
-            {resume.skills.map((s) => {
+            {resume.skills.map(s => {
               return <Skill skill={s} />;
             })}
           </Skills>
           <Education>
             <Header>Education</Header>
-            {resume.education.map((e) => {
+            {resume.education.map(e => {
               return <School school={e} />;
             })}
           </Education>
