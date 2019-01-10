@@ -4,14 +4,14 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { ResumeEducation } from './resume';
 
 const EducationContainer = styled.div``;
+const SchoolContainer = styled.div``;
 const EducationTitle = styled.div`
   display: flex;
   // justify-content: space-between;
-  // height: 45px;
   // width: 300px;
 `;
 const DateContainer = styled.div`
-  flex-direcion: row;
+  flex-direction: row;
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -39,16 +39,22 @@ type EducationProps = {
 
 export const School = (props: EducationProps) => {
   const { school } = props;
+
   return (
     <EducationContainer>
-      <EducationTitle>
-        <Institution>{school.institution}</Institution>
-        <DateContainer>
-          <StartDate>{school.startDate}</StartDate>-<EndDate>{school.endDate}</EndDate>
-        </DateContainer>
-      </EducationTitle>
-      <Program>{school.program}</Program>
-      <StudyType>{school.studyType}</StudyType>
+      <SchoolContainer>
+        <EducationTitle>
+          <Institution>{school.institution}</Institution>
+          <DateContainer>
+            <StartDate>{school.startDate}</StartDate>-<EndDate>{school.endDate}</EndDate>
+          </DateContainer>
+        </EducationTitle>
+        <Program>{school.program}</Program>
+        <StudyType>{school.studyType}</StudyType>
+      </SchoolContainer>
     </EducationContainer>
   );
 };
+export default styled(School)`
+  color: blue;
+`;
