@@ -51,6 +51,7 @@ export const Header = styled.h3`
   font-weight: 900;
   border-bottom: solid #c1fff3;
   font-size: 24px;
+  margin-bottom: 10px;
 `;
 const NameContainer = styled.div`
   // display: flex;
@@ -94,7 +95,7 @@ const ContactIcon = styled(FontAwesomeIcon)`
 const Summary = styled.div`
   font-size: 16px;
   color: grey;
-  padding: 20px;
+  padding-left: 20px;
 `;
 const Middle = styled.div`
   display: flex;
