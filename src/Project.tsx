@@ -8,6 +8,7 @@ const ProjectTitle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-weight: 800;
 `;
 const ProjectName = styled.a`
   font-size: 20px;

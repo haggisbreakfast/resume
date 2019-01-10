@@ -21,6 +21,7 @@ const Organization = styled.p`
   font-weight: 900;
   font-size: 18px;
   margin-bottom: 0px;
+  color: rgb(71, 71, 71);
 `;
 const Position = styled.p``;
 const StartDate = styled.p``;

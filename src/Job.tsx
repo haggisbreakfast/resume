@@ -19,6 +19,7 @@ const TitleContainer = styled.div`
 const Company = styled.p`
   font-size: 18px;
   font-weight: 800;
+  color: rgb(71, 71, 71);
 `;
 const Position = styled.p`
   margin-top: 0px;

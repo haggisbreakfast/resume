@@ -7,6 +7,7 @@ const SkillContainer = styled.div``;
 const Title = styled.p`
   font-size: 18px;
   font-weight: 800;
+  color: rgb(71, 71, 71);
 `;
 const Skills = styled.p``;
 
