@@ -1,17 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import { ResumeEducation } from './resume';
 
 const EducationContainer = styled.div``;
 const SchoolContainer = styled.div``;
 const EducationTitle = styled.div`
   display: flex;
-  // justify-content: space-between;
-  // width: 300px;
 `;
 const DateContainer = styled.div`
-  flex-direction: row;
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -56,6 +52,3 @@ export const School = (props: EducationProps) => {
     </EducationContainer>
   );
 };
-export default styled(School)`
-  color: blue;
-`;

@@ -4,38 +4,25 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-/**
- * Here we gotta import any font-awesome icons we wanna use
- * and they will be named like faWhateverIcon
- * which corresponds to icon="whatever-icon" when you
- * are using it
- */
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-// library.add(faCalendarAlt, faAddressCard, faRocket);
 import { resume, Resume } from './resume';
 import { Project } from './Project';
 import { Job } from './Job';
 import { Skill } from './Skill';
 import { School } from './School';
 import { Volunteer } from './Volunteer';
-/**
- * Make sure to add all your icons that you imported above
- * usin this method.
- */
+
 library.add(faEnvelope, faPhone, fab);
 
 export const GlobalStyle = createGlobalStyle`
-  // @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,500|Roboto');
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
   body {
     font-family: 'Roboto Mono', monospace;
       color: grey;
       margin: auto;
-
   }
 `;
-
 const Top = styled.div`
   background: -webkit-linear-gradient(top, #e7fff9 0%, #c1fff3 100%);
   display: flex;
@@ -51,13 +38,9 @@ export const Header = styled.h3`
   margin-bottom: 10px;
 `;
 const NameContainer = styled.div`
-  // display: flex;
-  // flex-direction: column;
   align-items: flex-start;
   padding: 10px 0px 50px 0px;
-  // align-content: flex-start
 `;
-
 const Name = styled.h1`
   font-size: 50px;
   margin: 0px;
@@ -70,7 +53,6 @@ const ContactsContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100px;
-  /* align-content: space-around; */
 `;
 const ContactContainer = styled.div`
   display: flex;
@@ -112,7 +94,6 @@ const Work = styled.div`
   display: flex;
   flex-direction: column;
 `;
-// const Job = styled.p``;
 const RightMiddle = styled.div`
   width: 25%;
   margin: 20px;
@@ -146,9 +127,6 @@ const App = (props: AppProps) => {
   const { resume } = props;
   return (
     <div>
-      {/**
-       * render global style here so we get global style
-       */}
       <GlobalStyle />
       <Top>
         <NameContainer>

@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import { ResumeProject } from './resume';
 
 const ProjectContainer = styled.div`

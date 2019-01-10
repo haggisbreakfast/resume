@@ -10,7 +10,6 @@ const VolunteerTitle = styled.div`
   height: 30px;
 `;
 const DateContainer = styled.div`
-  flex-direction: row;
   display: flex;
   align-items: center;
   font-size: 12px;

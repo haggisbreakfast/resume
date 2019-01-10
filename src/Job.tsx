@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import { ResumeJob } from './resume';
 
-const JobContainer = styled.div`
-  // display: flex;
-  // flex-direction: column;
-  // margin-bottom: 30px;
-`;
+const JobContainer = styled.div``;
 const TitleContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -27,15 +22,12 @@ const Position = styled.p`
   font-style: italic;
 `;
 const DateContainer = styled.div`
-  flex-direcion: row;
   display: flex;
   align-items: center;
   font-size: 12px;
 `;
 const Date = styled.p``;
-const Duties = styled.p`
-  /* font-size: 14px; */
-`;
+const Duties = styled.p``;
 
 type JobProps = {
   job: ResumeJob;
