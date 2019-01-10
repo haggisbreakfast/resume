@@ -83,7 +83,7 @@ const ContactMethod = styled.p`
 `;
 const ContactLink = styled.a`
   color: #36454f;
-  /* padding: 10px; */
+  padding-left: 10px;
 `;
 const ContactIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;
