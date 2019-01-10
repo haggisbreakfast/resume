@@ -91,7 +91,7 @@ export const resume: Resume = {
     startDate: 'Sept. 2012',
     endDate: 'Feb. 2016',
     summary:
-      'Assisting with fundraising events, Digitizing, and organizing music libraries, Tabling live shows and events, Written contributions to station magazine, Discorder',
+      'My role involved assisting with fundraising events, digitizing and organizing music libraries, tabling live shows and events, and composing written contributions to station magazine, Discorder.',
   },
 
   education: [
