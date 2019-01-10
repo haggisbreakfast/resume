@@ -12,113 +12,27 @@ import { Job } from './Job';
 import { Skill } from './Skill';
 import { School } from './School';
 import { Volunteer } from './Volunteer';
+import {
+  GlobalStyle,
+  Top,
+  Header,
+  NameContainer,
+  Name,
+  Label,
+  ContactsContainer,
+  ContactLink,
+  Summary,
+  Middle,
+  LeftMiddle,
+  Projects,
+  Work,
+  RightMiddle,
+  Skills,
+  Education,
+  Contact,
+} from './Components';
 
 library.add(faEnvelope, faPhone, fab);
-
-export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-  body {
-    font-family: 'Roboto Mono', monospace;
-      color: grey;
-      margin: auto;
-  }
-`;
-const Top = styled.div`
-  background: -webkit-linear-gradient(top, #e7fff9 0%, #c1fff3 100%);
-  display: flex;
-  flex-direction: column;
-  color: #36454f;
-  padding: 20px;
-`;
-export const Header = styled.h3`
-  color: #36454f;
-  font-weight: 900;
-  border-bottom: solid #c1fff3;
-  font-size: 24px;
-  margin-bottom: 10px;
-`;
-const NameContainer = styled.div`
-  align-items: flex-start;
-  padding: 10px 0px 50px 0px;
-`;
-const Name = styled.h1`
-  font-size: 50px;
-  margin: 0px;
-`;
-const Label = styled.p`
-  margin: 0px;
-  font-size: 20px;
-`;
-const ContactsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-`;
-const ContactContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 150px;
-`;
-const ContactMethod = styled.p`
-  padding: 10px;
-`;
-const ContactLink = styled.a`
-  color: #36454f;
-  padding-left: 10px;
-`;
-const ContactIcon = styled(FontAwesomeIcon)`
-  padding-right: 10px;
-`;
-
-const Summary = styled.div`
-  font-size: 16px;
-  color: grey;
-  padding-left: 20px;
-  padding-right: 20px;
-`;
-const Middle = styled.div`
-  display: flex;
-  flex-direction: row;
-  @media (max-width: 780px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-const LeftMiddle = styled.div`
-  width: 75%;
-  margin: 20px;
-`;
-const Projects = styled.div``;
-const Work = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-const RightMiddle = styled.div`
-  width: 25%;
-  margin: 20px;
-  @media (max-width: 780px) {
-    width: 75%;
-  }
-`;
-const Skills = styled.div``;
-const Education = styled.div``;
-
-type ContactProps = { icon: IconProp; item: string; isLink?: boolean };
-const Contact: React.StatelessComponent<ContactProps> = props => {
-  const { item, icon, isLink } = props;
-  const Content = isLink ? (
-    <ContactLink href={item}> {item} </ContactLink>
-  ) : (
-    <ContactMethod>{item}</ContactMethod>
-  );
-  return (
-    <ContactContainer>
-      <ContactIcon icon={icon} />
-      {Content}
-    </ContactContainer>
-  );
-};
 
 type AppProps = {
   resume: Resume;

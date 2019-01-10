@@ -18,6 +18,15 @@ const ProjectTitle = styled.div`
 `;
 const ProjectName = styled.a`
   font-size: 20px;
+  color: rgb(71, 71, 71);
+
+  text-decoration: none;
+  &:visited {
+    color: rgb(71, 71, 71);
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 const ProjectDate = styled.p`
   font-size: 12px;
@@ -33,7 +42,9 @@ export const Project = (props: ProjectProps) => {
   return (
     <ProjectContainer>
       <ProjectTitle>
-        <ProjectName href={project.link}>{project.name}</ProjectName>
+        <ProjectName href={project.link} target="_blank">
+          {project.name}
+        </ProjectName>
         <ProjectDate>{project.date}</ProjectDate>
       </ProjectTitle>
       <ProjectSummary>{project.summary}</ProjectSummary>

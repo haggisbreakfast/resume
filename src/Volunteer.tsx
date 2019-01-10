@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ResumeVolunteer } from './resume';
-import { Header } from './index';
+import { Header } from './Components';
 
 const VolunteerContainer = styled.div``;
 const VolunteerTitle = styled.div`

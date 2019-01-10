@@ -150,7 +150,7 @@ export const resume: Resume = {
     },
     {
       title: 'Frameworks, Libraries & Environments',
-      skills: 'ReactJS, NodeJS, Express, jQuery, EJS',
+      skills: 'ReactJS, NodeJS, Express, jQuery, EJS, Styled-Components',
     },
     {
       title: 'Databases',
