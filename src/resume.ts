@@ -68,7 +68,7 @@ export const resume: Resume = {
       startDate: 'May 2017',
       endDate: 'Sept. 2018',
       summary:
-        'providing customer support via chat, email, and phone, managing Social Media, processing customer orders, Utilizing and maintaining company Shopify for order processing, Data entry and sales analysis',
+        'This role involved providing customer support via chat, email, and phone, managing social media, processing customer orders, utilizing and maintaining Shopify for order processing, data entry and sales analysis.',
     },
     {
       company: 'Choices Market',
@@ -76,15 +76,15 @@ export const resume: Resume = {
       startDate: 'June 2012',
       endDate: 'May 2017',
       summary:
-        'Providing customer support, Merchandizing and creating in -store displays, Purchasing product and maintaining inventory, Planning and managing monthly specials',
+        'My responsibilities included providing customer support, merchandizing and creating in-store displays, purchasing product and managing inventory, and managing monthly specials.',
     },
     {
       company: 'Monarch House',
-      position: 'Behavior Interventionist',
+      position: 'Behaviour Interventionist',
       startDate: 'Feb. 2015',
       endDate: 'Sept. 2015',
       summary:
-        'Administering ABA therapy to children with Autism, Working alongside Clinicians, Speech Pathologists and Occupational Therapists to design learning programs for clients, Maintaining fluent and consistent communication with parents and Clinicians, Composing client progress reports',
+        'As a Behaviour Interventionist I was responsible for administering ABA therapy to children with Autism, working alongside Clinicians, Speech Pathologists and Occupational Therapists to design learning programs for clients, maintaining fluent and consistent communication with parents and Clinicians, and composing client progress reports.',
     },
   ],
   volunteer: {
