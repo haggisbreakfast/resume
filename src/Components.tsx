@@ -55,6 +55,9 @@ export const ContactMethod = styled.p`
 export const ContactLink = styled.a`
   color: #36454f;
   padding-left: 10px;
+  @media (max-width: 780px) {
+    font-size: 12px;
+  }
 `;
 export const ContactIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;
