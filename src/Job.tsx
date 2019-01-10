@@ -24,6 +24,7 @@ const Company = styled.p`
 const Position = styled.p`
   margin-top: 0px;
   padding-top: 0px;
+  font-style: italic;
 `;
 const DateContainer = styled.div`
   flex-direcion: row;

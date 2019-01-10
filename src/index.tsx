@@ -50,6 +50,7 @@ export const Header = styled.h3`
   color: #36454f;
   font-weight: 900;
   border-bottom: solid #c1fff3;
+  font-size: 24px;
 `;
 const NameContainer = styled.div`
   // display: flex;

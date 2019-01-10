@@ -23,7 +23,9 @@ const Organization = styled.p`
   margin-bottom: 0px;
   color: rgb(71, 71, 71);
 `;
-const Position = styled.p``;
+const Position = styled.p`
+  font-style: italic;
+`;
 const StartDate = styled.p``;
 const EndDate = styled.p``;
 const Summary = styled.p``;
