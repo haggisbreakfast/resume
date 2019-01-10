@@ -18,6 +18,7 @@ import { Project } from './Project';
 import { Job } from './Job';
 import { Skill } from './Skill';
 import { School } from './School';
+import { Volunteer } from './Volunteer';
 /**
  * Make sure to add all your icons that you imported above
  * usin this method.
@@ -45,7 +46,7 @@ const Top = styled.div`
   // font-weight: lighter;
   padding: 20px;
 `;
-const Header = styled.h3`
+export const Header = styled.h3`
   color: #36454f;
   font-weight: 900;
   border-bottom: solid #c1fff3;
@@ -107,7 +108,6 @@ const RightMiddle = styled.div`
 `;
 const Skills = styled.div``;
 const Education = styled.div``;
-const Volunteer = styled.div``;
 
 type ContactProps = { icon: IconProp; item: string; isLink?: boolean };
 const Contact: React.StatelessComponent<ContactProps> = props => {
@@ -125,12 +125,9 @@ const Contact: React.StatelessComponent<ContactProps> = props => {
   );
 };
 
-/// /hi/ // the type of const resume = {....}
-// This is the shape of Props going into App component
 type AppProps = {
   resume: Resume;
 };
-// This is a function component App that takes in AppProps
 const App = (props: AppProps) => {
   const { resume } = props;
   return (
@@ -160,11 +157,6 @@ const App = (props: AppProps) => {
           <Projects>
             <Header>Projects</Header>
             {resume.projects.map(p => {
-              /**
-               * In the end this should probs look like
-               * return <Project project={p} />
-               */
-
               return <Project project={p} />;
             })}
           </Projects>
@@ -188,13 +180,7 @@ const App = (props: AppProps) => {
               return <School school={e} />;
             })}
           </Education>
-          <Volunteer>
-            <Header>Volunteer</Header>
-            {resume.volunteer.organization}
-            {resume.volunteer.position}
-            {resume.volunteer.startDate} -{resume.volunteer.endDate}
-            {resume.volunteer.summary}
-          </Volunteer>
+          <Volunteer volunteer={resume.volunteer} />
         </RightMiddle>
       </Middle>
     </div>
