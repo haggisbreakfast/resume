@@ -4,17 +4,20 @@ import { ResumeVolunteer } from './resume';
 import { Header } from './Components';
 
 const VolunteerContainer = styled.div``;
+
 const VolunteerTitle = styled.div`
   display: flex;
   justify-content: space-between;
   height: 30px;
 `;
+
 const DateContainer = styled.div`
   display: flex;
   align-items: center;
   font-size: 12px;
   width: 25%;
 `;
+
 const Organization = styled.p`
   width: 75%;
   font-weight: 900;
@@ -22,11 +25,15 @@ const Organization = styled.p`
   margin-bottom: 0px;
   color: rgb(71, 71, 71);
 `;
+
 const Position = styled.p`
   font-style: italic;
 `;
+
 const StartDate = styled.p``;
+
 const EndDate = styled.p``;
+
 const Summary = styled.p``;
 
 type VolunteerProps = {

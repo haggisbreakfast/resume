@@ -5,6 +5,7 @@ import { ResumeProject } from './resume';
 const ProjectContainer = styled.div`
   align-content: center;
 `;
+
 const ProjectTitle = styled.div`
   display: flex;
   flex-direction: row;
@@ -16,10 +17,10 @@ const ProjectTitle = styled.div`
     height: 50px;
   }
 `;
+
 const ProjectName = styled.a`
   font-size: 20px;
   color: rgb(71, 71, 71);
-
   text-decoration: none;
   &:visited {
     color: rgb(71, 71, 71);
@@ -28,9 +29,11 @@ const ProjectName = styled.a`
     text-decoration: underline;
   }
 `;
+
 const ProjectDate = styled.p`
   font-size: 12px;
 `;
+
 const ProjectSummary = styled.p``;
 
 type ProjectProps = {

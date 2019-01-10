@@ -23,16 +23,19 @@ export type ResumeEducation = {
   startDate: string;
   endDate: string;
 };
+
 export type ResumeProject = {
   name: string;
   date: string;
   link: string;
   summary: string;
 };
+
 export type ResumeSkill = {
   title: string;
   skills: string;
 };
+
 export type ResumeVolunteer = {
   organization: string;
   position: string;
@@ -40,6 +43,7 @@ export type ResumeVolunteer = {
   endDate: string;
   summary: string;
 };
+
 export type Resume = {
   basics: ResumeBasics;
   work: ResumeJob[];
@@ -49,7 +53,6 @@ export type Resume = {
   volunteer: ResumeVolunteer;
 };
 
-// lets make resume be of type Resume
 export const resume: Resume = {
   basics: {
     name: 'Lindsay Stewart',
@@ -95,7 +98,6 @@ export const resume: Resume = {
     summary:
       'My role involved assisting with fundraising events, digitizing and organizing music libraries, tabling live shows and events, and composing written contributions to station magazine, Discorder.',
   },
-
   education: [
     {
       institution: 'Lighthouse Labs',
