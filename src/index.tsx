@@ -37,13 +37,10 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 const Top = styled.div`
-  // background-color: hsla(172, 100%, 45%, 1);
   background: -webkit-linear-gradient(top, #e7fff9 0%, #c1fff3 100%);
   display: flex;
   flex-direction: column;
   color: #36454f;
-  // font-family: "Roboto", sans-serif;
-  // font-weight: lighter;
   padding: 20px;
 `;
 export const Header = styled.h3`
@@ -73,7 +70,7 @@ const ContactsContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100px;
-  align-content: space-around;
+  /* align-content: space-around; */
 `;
 const ContactContainer = styled.div`
   display: flex;
@@ -86,7 +83,7 @@ const ContactMethod = styled.p`
 `;
 const ContactLink = styled.a`
   color: #36454f;
-  padding: 10px;
+  /* padding: 10px; */
 `;
 const ContactIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;

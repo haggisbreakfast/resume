@@ -57,7 +57,7 @@ export const resume: Resume = {
     email: 'lj.stewart00@gmail.com',
     phone: '(604) 813-1948',
     github: 'http://github.com/haggisbreakfast',
-    linkedin: 'www.linkedin.com/in/lindsayjanestewart/',
+    linkedin: 'http://linkedin.com/in/lindsayjanestewart/',
     summary:
       "Junior Web Developer with a passion for creating applications that are equal parts accessible, user-friendly, and visually appealing.  Following my graduation from Lighthouse Lab's Web Development Bootcamp, I am eager to put my new skills to work. I am a strong communicator with a love for creative collaboration. In addition to coding, I love playing in bands and spending quality time with my two cats, Betty and Jughead. ",
   },
