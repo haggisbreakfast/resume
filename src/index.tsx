@@ -71,15 +71,22 @@ const Label = styled.p`
 const ContactsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 70px;
+  height: 100px;
+  align-content: space-around;
 `;
 const ContactContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 150px;
 `;
-const ContactMethod = styled.p``;
-const ContactLink = styled.a``;
+const ContactMethod = styled.p`
+  padding: 10px;
+`;
+const ContactLink = styled.a`
+  color: #36454f;
+  padding: 10px;
+`;
 const ContactIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;
 `;
@@ -147,6 +154,8 @@ const App = (props: AppProps) => {
           <Contact item={resume.basics.phone} icon="phone" />
           <Contact item={resume.basics.github} icon={['fab', 'github']} isLink />
           <ContactLink href={resume.basics.github} />
+          <Contact item={resume.basics.linkedin} icon={['fab', 'linkedin']} isLink />
+          <ContactLink href={resume.basics.linkedin} />
         </ContactsContainer>
       </Top>
       <Summary>
