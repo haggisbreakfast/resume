@@ -34,7 +34,7 @@ const DateContainer = styled.div`
 `;
 const Date = styled.p``;
 const Duties = styled.p`
-  font-size: 14px;
+  /* font-size: 14px; */
 `;
 
 type JobProps = {

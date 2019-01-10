@@ -3,18 +3,23 @@ import ReactDOM from 'react-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 import { ResumeProject } from './resume';
 
-const ProjectContainer = styled.div``;
+const ProjectContainer = styled.div`
+  align-content: center;
+`;
 const ProjectTitle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-weight: 800;
+  font-size: 18px;
+  height: 24px;
 `;
 const ProjectName = styled.a`
   font-size: 20px;
 `;
-const ProjectDate = styled.p``;
-const ProjectLink = styled.a``;
+const ProjectDate = styled.p`
+  font-size: 12px;
+`;
 const ProjectSummary = styled.p``;
 
 type ProjectProps = {
@@ -22,8 +27,6 @@ type ProjectProps = {
 };
 
 export const Project = (props: ProjectProps) => {
-  // on a new line, try grabbing project out of props
-  // and JSON.stringify(project) instead of all the props
   const { project } = props;
   return (
     <ProjectContainer>
