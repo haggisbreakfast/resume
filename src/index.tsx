@@ -93,10 +93,15 @@ const Summary = styled.div`
   font-size: 16px;
   color: grey;
   padding-left: 20px;
+  padding-right: 20px;
 `;
 const Middle = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const LeftMiddle = styled.div`
   width: 75%;
@@ -111,6 +116,9 @@ const Work = styled.div`
 const RightMiddle = styled.div`
   width: 25%;
   margin: 20px;
+  @media (max-width: 780px) {
+    width: 75%;
+  }
 `;
 const Skills = styled.div``;
 const Education = styled.div``;

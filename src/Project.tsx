@@ -13,6 +13,9 @@ const ProjectTitle = styled.div`
   font-weight: 800;
   font-size: 18px;
   height: 24px;
+  @media (max-width: 780px) {
+    height: 50px;
+  }
 `;
 const ProjectName = styled.a`
   font-size: 20px;
