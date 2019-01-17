@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono', monospace;
       color: grey;
       margin: auto;
+
   }
 `;
 
@@ -84,13 +85,18 @@ export const Middle = styled.div`
   flex-direction: row;
   @media (max-width: 780px) {
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 `;
 
 export const LeftMiddle = styled.div`
   width: 75%;
   margin: 20px;
+  @media (max-width: 780px) {
+    width: 100%;
+
+    /* align-items: center; */
+  }
 `;
 
 export const Projects = styled.div``;
@@ -104,7 +110,7 @@ export const RightMiddle = styled.div`
   width: 25%;
   margin: 20px;
   @media (max-width: 780px) {
-    width: 75%;
+    width: 100%;
   }
 `;
 
