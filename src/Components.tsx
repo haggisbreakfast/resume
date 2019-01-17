@@ -94,7 +94,6 @@ export const LeftMiddle = styled.div`
   margin: 20px;
   @media (max-width: 780px) {
     width: 100%;
-
     /* align-items: center; */
   }
 `;
