@@ -95,3 +95,4 @@ const App = (props: AppProps) => {
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(<App resume={resume} />, rootElement);
+
