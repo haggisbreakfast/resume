@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faMusic } from '@fortawesome/free-solid-svg-icons';
 
 import { resume, Resume } from './resume';
 import { Project } from './Project';
@@ -30,7 +30,7 @@ import {
   Contact,
 } from './Components';
 
-library.add(faEnvelope, faPhone, fab);
+library.add(faEnvelope, faPhone, faMusic, fab);
 
 type AppProps = {
   resume: Resume;
@@ -52,6 +52,8 @@ const App = (props: AppProps) => {
           <ContactLink href={resume.basics.github} />
           <Contact item={resume.basics.linkedin} icon={['fab', 'linkedin']} isLink />
           <ContactLink href={resume.basics.linkedin} />
+          <Contact item={resume.basics.bandcamp} icon="music" isLink />
+          <ContactLink href={resume.basics.bandcamp} />
         </ContactsContainer>
       </Top>
       <Summary>
@@ -62,9 +64,9 @@ const App = (props: AppProps) => {
         <LeftMiddle>
           <Projects>
             <Header>Projects</Header>
-            {resume.projects.map(p => {
+            {resume.projects.map((p => {
               return <Project project={p} />;
-            })}
+            }))}
           </Projects>
           <Work>
             <Header>Employment</Header>
@@ -95,4 +97,3 @@ const App = (props: AppProps) => {
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(<App resume={resume} />, rootElement);
-

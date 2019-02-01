@@ -71,6 +71,7 @@ export const ContactLink = styled.a`
 
 export const ContactIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;
+  font-size: 12px;
 `;
 
 export const Summary = styled.div`
