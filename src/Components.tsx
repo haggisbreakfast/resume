@@ -64,6 +64,10 @@ export const ContactMethod = styled.span`
 export const ContactLink = styled.a`
   color: #36454f;
   padding-left: 10px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
   @media (max-width: 780px) {
     font-size: 12px;
   }
@@ -118,13 +122,13 @@ export const Skills = styled.div``;
 
 export const Education = styled.div``;
 
-type ContactProps = { icon: IconProp; item: string; isLink?: boolean };
+type ContactProps = { icon: IconProp; item: string; text: string; isLink?: boolean };
 export const Contact: React.StatelessComponent<ContactProps> = props => {
-  const { item, icon, isLink } = props;
+  const { item, text, icon, isLink } = props;
   const Content = isLink ? (
-    <ContactLink href={item}> {item} </ContactLink>
+    <ContactLink href={item}> {text} </ContactLink>
   ) : (
-    <ContactMethod>{item}</ContactMethod>
+    <ContactMethod>{text}</ContactMethod>
   );
   return (
     <ContactContainer>

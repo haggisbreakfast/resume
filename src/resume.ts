@@ -59,7 +59,7 @@ export const resume: Resume = {
     name: 'Lindsay Stewart',
     label: 'Junior Web Developer',
     email: 'lj.stewart00@gmail.com',
-    phone: '(604) 813-1948',
+    phone: '+16048131948',
     github: 'http://github.com/haggisbreakfast',
     linkedin: 'http://linkedin.com/in/lindsayjanestewart',
     bandcamp: 'https://maneaterband.bandcamp.com',
