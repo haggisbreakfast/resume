@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faMusic } from '@fortawesome/free-solid-svg-icons';
+import mailto from 'react';
 
 import { resume, Resume } from './resume';
 import { Project } from './Project';
@@ -46,8 +47,10 @@ const App = (props: AppProps) => {
           <Label>{resume.basics.label}</Label>
         </NameContainer>
         <ContactsContainer>
-          <Contact item={resume.basics.email} icon="envelope" />
-          <Contact item={resume.basics.phone} icon="phone" />
+          <Contact item={resume.basics.email} icon="envelope" isLink />
+          <ContactLink href={`mailto: ${resume.basics.email}`} />
+          <Contact item={resume.basics.phone} icon="phone" isLink />
+          <ContactLink href={resume.basics.phone} />
           <Contact item={resume.basics.github} icon={['fab', 'github']} isLink />
           <ContactLink href={resume.basics.github} />
           <Contact item={resume.basics.linkedin} icon={['fab', 'linkedin']} isLink />
@@ -64,9 +67,9 @@ const App = (props: AppProps) => {
         <LeftMiddle>
           <Projects>
             <Header>Projects</Header>
-            {resume.projects.map((p => {
+            {resume.projects.map(p => {
               return <Project project={p} />;
-            }))}
+            })}
           </Projects>
           <Work>
             <Header>Employment</Header>

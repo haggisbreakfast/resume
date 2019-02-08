@@ -30,11 +30,11 @@ const ProjectName = styled.a`
   }
 `;
 
-const ProjectDate = styled.p`
+const ProjectDate = styled.span`
   font-size: 12px;
 `;
 
-const ProjectSummary = styled.p``;
+const ProjectSummary = styled.span``;
 
 type ProjectProps = {
   project: ResumeProject;

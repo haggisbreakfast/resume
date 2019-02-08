@@ -13,13 +13,13 @@ const TitleContainer = styled.div`
   }
 `;
 
-const Company = styled.p`
+const Company = styled.span`
   font-size: 18px;
   font-weight: 800;
   color: rgb(71, 71, 71);
 `;
 
-const Position = styled.p`
+const Position = styled.span`
   margin-top: 0px;
   padding-top: 0px;
   font-style: italic;
@@ -31,7 +31,7 @@ const DateContainer = styled.div`
   font-size: 12px;
 `;
 
-const Date = styled.p``;
+const Date = styled.span``;
 
 const Duties = styled.p``;
 

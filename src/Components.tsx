@@ -39,7 +39,7 @@ export const Name = styled.h1`
   margin: 0px;
 `;
 
-export const Label = styled.p`
+export const Label = styled.span`
   margin: 0px;
   font-size: 20px;
 `;
@@ -57,7 +57,7 @@ export const ContactContainer = styled.div`
   height: 150px;
 `;
 
-export const ContactMethod = styled.p`
+export const ContactMethod = styled.span`
   padding: 10px;
 `;
 
