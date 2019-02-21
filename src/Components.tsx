@@ -68,9 +68,6 @@ export const ContactLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
-  @media (max-width: 780px) {
-    font-size: 12px;
-  }
 `;
 
 export const ContactIcon = styled(FontAwesomeIcon)`
@@ -100,6 +97,7 @@ export const LeftMiddle = styled.div`
   margin: 20px;
   @media (max-width: 780px) {
     width: 100%;
+    margin-bottom: 0px;
   }
 `;
 
@@ -115,6 +113,7 @@ export const RightMiddle = styled.div`
   margin: 20px;
   @media (max-width: 780px) {
     width: 100%;
+    margin-top: 0px;
   }
 `;
 
