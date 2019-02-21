@@ -2,15 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { ResumeSkill } from './resume';
 
-const SkillContainer = styled.div``;
+const SkillContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+`;
 
-const Title = styled.p`
+const Title = styled.span`
   font-size: 18px;
   font-weight: 800;
   color: rgb(71, 71, 71);
+  margin-bottom: 5px;
 `;
 
-const Skills = styled.p``;
+const Skills = styled.span``;
 
 type SkillProps = {
   skill: ResumeSkill;
@@ -22,9 +27,6 @@ export const Skill = (props: SkillProps) => {
     <SkillContainer>
       <Title>{skill.title}</Title>
       <Skills>{skill.skills}</Skills>
-      {/* <Languages>{skill.languages}</Languages>
-      <Frameworks>{skill.frameworks}</Frameworks>
-      <Databases>{skill.databases}</Databases> */}
     </SkillContainer>
   );
 };

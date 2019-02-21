@@ -52,23 +52,16 @@ const App = (props: AppProps) => {
             text="lj.stewart00@gmail.com"
             isLink
           />
-
-          {/* <ContactLink href={`mailto:${resume.basics.email}`} data-rel="external" /> */}
           <Contact item={`tel:${resume.basics.phone}`} icon="phone" text="604.813.1948" isLink />
-          {/* <ContactLink href={resume.basics.phone} /> */}
           <Contact item={resume.basics.github} icon={['fab', 'github']} text="github" isLink>
             github
           </Contact>
-          {/* <ContactLink href={resume.basics.github} /> */}
           <Contact
             item={resume.basics.linkedin}
             icon={['fab', 'linkedin']}
             text="linkedin"
             isLink
           />
-          {/* <ContactLink href={resume.basics.linkedin} /> */}
-          <Contact item={resume.basics.bandcamp} icon="music" text="music" isLink />
-          {/* <ContactLink href={resume.basics.bandcamp} /> */}
         </ContactsContainer>
       </Top>
       <Summary>

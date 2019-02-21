@@ -5,7 +5,6 @@ export type ResumeBasics = {
   phone: string;
   github: string;
   linkedin: string;
-  bandcamp: string;
   summary: string;
 };
 
@@ -62,11 +61,18 @@ export const resume: Resume = {
     phone: '+16048131948',
     github: 'http://github.com/haggisbreakfast',
     linkedin: 'http://linkedin.com/in/lindsayjanestewart',
-    bandcamp: 'https://maneaterband.bandcamp.com',
     summary:
-      "Junior Web Developer with a passion for creating applications that are equal parts accessible, user-friendly, and visually appealing.  Following my graduation from Lighthouse Lab's Web Development Bootcamp, I am eager to put my new skills to work. I am a strong communicator with a love for creative collaboration. In addition to coding, I love playing in bands and spending quality time with my two cats, Betty and Jughead. ",
+      "Junior Web Developer with a passion for creating applications that are equal parts accessible, user-friendly, and visually appealing.  Following my graduation from Lighthouse Lab's Web Development program, I am eager to put my new skills to work. I am a strong communicator with a love for creative collaboration. In addition to coding, I love playing music, and am an active part of Vancouver's independent music community. ",
   },
   work: [
+    {
+      company: 'SocsDog Co-op',
+      position: 'Front End Developer',
+      startDate: 'Dec 2018',
+      endDate: 'current',
+      summary:
+        'In this internship position, I am working alongside a small team on a range of different features for an up-and-coming booking software product. The Bookery.io tech stack is comprised of React, Typescript, Apollo-client, Styled-Components, Formik and React-Router.',
+    },
     {
       company: 'Omega Nutrition',
       position: 'Customer Service Representative/Project Coordinator',
@@ -117,6 +123,13 @@ export const resume: Resume = {
     },
   ],
   projects: [
+    {
+      name: 'Bookery.io homepage',
+      date: 'Dec 2018',
+      link: 'https://bookery.io/',
+      summary:
+        'Bookery.io is booking software that is currently in production. I built the homepage using ReactJS, Typescript, and Styled-Components.',
+    },
     {
       name: 'Good Synth (collaborative)',
       date: 'Nov 2018',

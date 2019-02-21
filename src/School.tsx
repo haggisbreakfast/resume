@@ -4,10 +4,13 @@ import { ResumeEducation } from './resume';
 
 const EducationContainer = styled.div``;
 
-const SchoolContainer = styled.div``;
+const SchoolContainer = styled.div`
+  margin-bottom: 10px;
+`;
 
 const EducationTitle = styled.div`
   display: flex;
+  margin-bottom: 0px;
 `;
 
 const DateContainer = styled.div`
@@ -17,7 +20,7 @@ const DateContainer = styled.div`
   width: 25%;
 `;
 
-const Institution = styled.p`
+const Institution = styled.span`
   width: 75%;
   font-weight: 900;
   font-size: 18px;
@@ -25,18 +28,16 @@ const Institution = styled.p`
   color: rgb(71, 71, 71);
 `;
 
-const Program = styled.p`
+const Program = styled.span`
   margin-top: 0px;
   margin-bottom: 0px;
 `;
 
-const StudyType = styled.p`
-  margin-top: 0px;
-`;
+const StudyType = styled.span``;
 
-const StartDate = styled.p``;
+const StartDate = styled.span``;
 
-const EndDate = styled.p``;
+const EndDate = styled.span``;
 
 type EducationProps = {
   school: ResumeEducation;

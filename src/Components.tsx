@@ -75,7 +75,7 @@ export const ContactLink = styled.a`
 
 export const ContactIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;
-  font-size: 12px;
+  font-size: 16px;
 `;
 
 export const Summary = styled.div`
@@ -88,9 +88,10 @@ export const Summary = styled.div`
 export const Middle = styled.div`
   display: flex;
   flex-direction: row;
+  /* padding-left: 20px; */
+  padding-right: 25px;
   @media (max-width: 780px) {
     flex-direction: column;
-    /* align-items: center; */
   }
 `;
 
@@ -99,7 +100,6 @@ export const LeftMiddle = styled.div`
   margin: 20px;
   @media (max-width: 780px) {
     width: 100%;
-    /* align-items: center; */
   }
 `;
 

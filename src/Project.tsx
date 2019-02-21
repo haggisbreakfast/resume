@@ -3,19 +3,17 @@ import styled from 'styled-components';
 import { ResumeProject } from './resume';
 
 const ProjectContainer = styled.div`
-  align-content: center;
+  margin-bottom: 10px;
 `;
 
 const ProjectTitle = styled.div`
+  margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-weight: 800;
   font-size: 18px;
   height: 24px;
-  @media (max-width: 780px) {
-    height: 50px;
-  }
 `;
 
 const ProjectName = styled.a`

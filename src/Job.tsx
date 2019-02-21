@@ -7,10 +7,7 @@ const JobContainer = styled.div``;
 const TitleContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 45px;
-  @media (max-width: 780px) {
-    height: 60px;
-  }
+  height: 24px;
 `;
 
 const Company = styled.span`
@@ -20,8 +17,6 @@ const Company = styled.span`
 `;
 
 const Position = styled.span`
-  margin-top: 0px;
-  padding-top: 0px;
   font-style: italic;
 `;
 
@@ -33,7 +28,9 @@ const DateContainer = styled.div`
 
 const Date = styled.span``;
 
-const Duties = styled.p``;
+const Duties = styled.p`
+  margin-top: 5px;
+`;
 
 type JobProps = {
   job: ResumeJob;

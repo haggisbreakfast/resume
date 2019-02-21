@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import { ResumeVolunteer } from './resume';
 import { Header } from './Components';
 
-const VolunteerContainer = styled.div``;
+const VolunteerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 const VolunteerTitle = styled.div`
   display: flex;
@@ -18,23 +21,24 @@ const DateContainer = styled.div`
   width: 25%;
 `;
 
-const Organization = styled.p`
+const Organization = styled.span`
   width: 75%;
   font-weight: 900;
   font-size: 18px;
-  margin-bottom: 0px;
   color: rgb(71, 71, 71);
 `;
 
-const Position = styled.p`
+const Position = styled.span`
   font-style: italic;
 `;
 
-const StartDate = styled.p``;
+const StartDate = styled.span``;
 
-const EndDate = styled.p``;
+const EndDate = styled.span``;
 
-const Summary = styled.p``;
+const Summary = styled.span`
+  margin-top: 5px;
+`;
 
 type VolunteerProps = {
   volunteer: ResumeVolunteer;
