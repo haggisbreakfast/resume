@@ -66,6 +66,14 @@ export const resume: Resume = {
   },
   work: [
     {
+      company: 'Glance',
+      position: 'Jr. Web Developer',
+      startDate: 'Mar 2020',
+      endDate: 'current',
+      summary:
+        '',
+    },
+    {
       company: 'SocsDog Co-op',
       position: 'Front End Developer',
       startDate: 'Dec 2018',
