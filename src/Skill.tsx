@@ -10,7 +10,7 @@ const SkillContainer = styled.div`
 
 const Title = styled.span`
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   color: rgb(71, 71, 71);
   margin-bottom: 5px;
 `;

@@ -23,7 +23,7 @@ const DateContainer = styled.div`
 
 const Organization = styled.span`
   width: 75%;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 18px;
   color: rgb(71, 71, 71);
 `;

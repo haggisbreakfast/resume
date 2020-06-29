@@ -29,6 +29,7 @@ export type ResumeProject = {
   date: string;
   link: string;
   summary: string;
+  techstack: string[];
 };
 
 export type ResumeSkill = {
@@ -56,30 +57,30 @@ export type Resume = {
 export const resume: Resume = {
   basics: {
     name: 'Lindsay Stewart',
-    label: 'Junior Web Developer',
+    label: 'Web Developer',
     email: 'lj.stewart00@gmail.com',
     phone: '+16048131948',
     github: 'http://github.com/haggisbreakfast',
     linkedin: 'http://linkedin.com/in/lindsayjanestewart',
     summary:
-      "Junior Web Developer with a passion for creating applications that are equal parts accessible, user-friendly, and visually appealing.  Following my graduation from Lighthouse Lab's Web Development program, I am eager to put my new skills to work. I am a strong communicator with a love for creative collaboration. In addition to coding, I love playing music, and am an active part of Vancouver's independent music community. ",
+      "I am a Web Developer with a passion for creating sites and applications that are equal parts accessible, intuitive, and attractive. I am an adept and determined problem-solver, and a strong communicator with a love for creative collaboration.",
   },
   work: [
     {
-      company: 'Glance',
+      company: 'Glance Digital',
       position: 'Jr. Web Developer',
-      startDate: 'Mar 2020',
+      startDate: 'Mar 2019',
       endDate: 'current',
       summary:
-        '',
+        'As Junior Developer for Glance, I specialized in transforming design mock-ups into sleek, responsive, user-friendly websites. This role also entailed troubleshooting and maintaining existing sites, corresponding and collaborating with clients, working in a variety of frameworks and languages, and performing technical research.',
     },
     {
       company: 'SocsDog Co-op',
       position: 'Front End Developer',
       startDate: 'Dec 2018',
-      endDate: 'current',
+      endDate: 'April 2019',
       summary:
-        'In this internship position, I am working alongside a small team on a range of different features for an up-and-coming booking software product. The Bookery.io tech stack is comprised of React, Typescript, Apollo-client, Styled-Components, Formik and React-Router.',
+        'In this internship position, I was in charge of Front-End development, working alongside a small team on a range of different features for an up-and-coming booking software product. The Bookery.io tech stack is comprised of React, Typescript, Apollo-client, Styled-Components, Formik and React-Router.',
     },
     {
       company: 'Omega Nutrition',
@@ -87,23 +88,7 @@ export const resume: Resume = {
       startDate: 'May 2017',
       endDate: 'Sept 2018',
       summary:
-        'This role involved providing customer support via chat, email, and phone, managing social media, processing customer orders, utilizing and maintaining Shopify for order processing, data entry and sales analysis.',
-    },
-    {
-      company: 'Choices Market',
-      position: 'Bulk Department Head/Purchaser',
-      startDate: 'June 2012',
-      endDate: 'May 2017',
-      summary:
-        'My responsibilities included providing customer support, merchandizing and creating in-store displays, purchasing product and managing inventory, and managing monthly specials.',
-    },
-    {
-      company: 'Monarch House',
-      position: 'Behaviour Interventionist',
-      startDate: 'Feb 2015',
-      endDate: 'Sept 2015',
-      summary:
-        'As a Behaviour Interventionist I was responsible for administering ABA therapy to children with Autism, working alongside Clinicians, Speech Pathologists and Occupational Therapists to design learning programs for clients, maintaining fluent and consistent communication with parents and Clinicians, and composing client progress reports.',
+        'This role primarily entailed corresponding with customers and providing support via chat, email, and phone. Additionally, I was responsible for managing social media, processing customer orders, utilizing and maintaining Shopify for order processing, data entry, and sales analysis.',
     },
   ],
   volunteer: {
@@ -131,12 +116,38 @@ export const resume: Resume = {
     },
   ],
   projects: [
+    { 
+    name: 'Carine Redmond',
+    date: 'Feb 2020',
+    link: 'http://carineredmond.com/',
+    summary: 'A collaborative, customized site built by Glance for a clients PR business.',
+    techstack: [
+      'code',
+      'code'
+    ]
+  },
+    {     
+    name: 'Bookery.io homepage',
+    date: 'Dec 2018',
+    link: 'https://bookery.io/',
+    summary: 'summary',
+    techstack: [
+      'code',
+      'code'
+    ]
+
+  },
     {
       name: 'Bookery.io homepage',
       date: 'Dec 2018',
       link: 'https://bookery.io/',
       summary:
         'Bookery.io is booking software that is currently in production. I built the homepage using ReactJS, Typescript, and Styled-Components.',
+        techstack: [
+          'code',
+          'code'
+        ]
+    
     },
     {
       name: 'Good Synth (collaborative)',
@@ -144,6 +155,11 @@ export const resume: Resume = {
       link: 'https://multi-player-piano.herokuapp.com/',
       summary:
         'Good Synth is an interactive, collaborative Synthesizer Interface, which allows you to make music with all other connected users in real-time! It was built with ReactJS, Web Audio API, Express, WebSockets, JSX, ES6, and SCSS. ',
+        techstack: [
+          'code',
+          'code'
+        ]
+    
     },
     {
       name: 'Chatty App',
@@ -151,6 +167,11 @@ export const resume: Resume = {
       link: 'https://github.com/haggisbreakfast/chatty',
       summary:
         'Chatty App is a simple, single page web app that allows users to chat in real-time. Built with ReactJS, Webpack with Babel, JSX, ES6, WebSockets, and SCSS.',
+        techstack: [
+          'code',
+          'code'
+        ]
+    
     },
     {
       name: 'Choo-Chooser (collaborative)',
@@ -158,6 +179,11 @@ export const resume: Resume = {
       link: 'https://github.com/haggisbreakfast/Decision-Maker',
       summary:
         'Choo-Chooser is a simple polling web application to aid its users in making (what can be) difficult decisions. Full-stack web application built with HTML, Sass, JS, jQuery, AJAX, EJS, Node, Express, Knex, Mailgun and PostgresSQL',
+        techstack: [
+          'code',
+          'code'
+        ]
+    
     },
     {
       name: 'Tweeter',
@@ -165,6 +191,11 @@ export const resume: Resume = {
       link: 'https://github.com/haggisbreakfast/tweeter',
       summary:
         'Tweeter is a simple, single-page Twitter clone, built upon the provided starter code for this project to put my HTML, CSS, JS, jQuery and AJAX front-end skills, as well as my Node, Express and MongoDB back-end skills to work.',
+        techstack: [
+          'code',
+          'code'
+        ]
+    
     },
   ],
 
@@ -175,7 +206,7 @@ export const resume: Resume = {
     },
     {
       title: 'Frameworks, Libraries & Environments',
-      skills: 'ReactJS, NodeJS, Express, jQuery, EJS, Styled-Components',
+      skills: 'ReactJS, jQuery, NodeJS, Express, EJS, Styled-Components',
     },
     {
       title: 'Databases',

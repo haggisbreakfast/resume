@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
   body {
     font-family: 'Roboto Mono', monospace;
       color: grey;
@@ -23,7 +23,7 @@ export const Top = styled.div`
 
 export const Header = styled.h3`
   color: #36454f;
-  font-weight: 900;
+  font-weight: 400;
   border-bottom: solid #c1fff3;
   font-size: 24px;
   margin-bottom: 10px;
@@ -36,6 +36,7 @@ export const NameContainer = styled.div`
 
 export const Name = styled.h1`
   font-size: 50px;
+  font-weight: 400;
   margin: 0px;
 `;
 

@@ -65,7 +65,7 @@ const App = (props: AppProps) => {
         </ContactsContainer>
       </Top>
       <Summary>
-        <Header>Profile</Header>
+        <Header>About Me</Header>
         {resume.basics.summary}
       </Summary>
       <Middle>

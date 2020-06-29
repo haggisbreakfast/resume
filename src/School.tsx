@@ -22,7 +22,7 @@ const DateContainer = styled.div`
 
 const Institution = styled.span`
   width: 75%;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 0px;
   color: rgb(71, 71, 71);
