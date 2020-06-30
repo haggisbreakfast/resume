@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ResumeJob } from './resume';
-
+import {Date} from './Components';
 const JobContainer = styled.div``;
 
 const TitleContainer = styled.div`
@@ -26,7 +26,6 @@ const DateContainer = styled.div`
   font-size: 12px;
 `;
 
-const Date = styled.span``;
 
 const Duties = styled.p`
   margin-top: 5px;
@@ -43,7 +42,7 @@ export const Job = (props: JobProps) => {
       <TitleContainer>
         <Company>{job.company}</Company>
         <DateContainer>
-          <Date>{job.startDate}</Date> -<Date>{job.endDate}</Date>
+          <Date>{job.startDate} - {job.endDate}</Date>
         </DateContainer>
       </TitleContainer>
       <Position>{job.position}</Position>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ResumeVolunteer } from './resume';
-import { Header } from './Components';
+import { Date, Header } from './Components';
 
 const VolunteerContainer = styled.div`
   display: flex;
@@ -52,7 +52,7 @@ export const Volunteer = (props: VolunteerProps) => {
       <VolunteerTitle>
         <Organization>{volunteer.organization}</Organization>
         <DateContainer>
-          <StartDate>{volunteer.startDate}</StartDate> - <EndDate>{volunteer.endDate}</EndDate>
+          <Date>{volunteer.startDate} - {volunteer.endDate}</Date>
         </DateContainer>
       </VolunteerTitle>
       <Position>{volunteer.position}</Position>

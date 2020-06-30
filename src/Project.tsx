@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ResumeProject } from './resume';
+import { Date } from './Components';
 
 const ProjectContainer = styled.div`
   margin-bottom: 10px;
@@ -30,9 +31,7 @@ const ProjectName = styled.a`
   }
 `;
 
-const ProjectDate = styled.span`
-  font-size: 12px;
-`;
+
 
 const ProjectSummary = styled.span``;
 const ProjectTechStackContainer = styled.div`
@@ -57,7 +56,7 @@ export const Project = (props: ProjectProps) => {
         <ProjectName href={project.link} target="_blank">
           {project.name}
         </ProjectName>
-        <ProjectDate>{project.date}</ProjectDate>
+        <Date>{project.date}</Date>
       </ProjectTitle>
       <ProjectSummary>{project.summary}</ProjectSummary>
       <ProjectTechStackContainer>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ResumeEducation } from './resume';
+import { Date} from './Components';
 
 const EducationContainer = styled.div``;
 
@@ -35,9 +36,6 @@ const Program = styled.span`
 
 const StudyType = styled.span``;
 
-const StartDate = styled.span``;
-
-const EndDate = styled.span``;
 
 type EducationProps = {
   school: ResumeEducation;
@@ -52,7 +50,7 @@ export const School = (props: EducationProps) => {
         <EducationTitle>
           <Institution>{school.institution}</Institution>
           <DateContainer>
-            <StartDate>{school.startDate}</StartDate>-<EndDate>{school.endDate}</EndDate>
+            <Date>{school.startDate} - {school.endDate}</Date>
           </DateContainer>
         </EducationTitle>
         <Program>{school.program}</Program>

@@ -2,30 +2,34 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-
+import  Computer  from './vintage-computer-removebg-preview.png';
+import Curls from './curve-11.1s-1084px.svg';
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
   body {
     font-family: 'Roboto Mono', monospace;
       color: grey;
       margin: auto;
+      background: #F1E9CB;
 
   }
 `;
 
 export const Top = styled.div`
-  background: linear-gradient(#e7fff9 0%, #c1fff3 100%);
+  background: #A3D6D4;
+  background-image: url(${Curls});
   display: flex;
   flex-direction: column;
   color: #36454f;
-  padding: 20px;
+  padding: 60px 20px 120px 20px;
 `;
 
 export const Header = styled.h3`
   color: #36454f;
   font-weight: 400;
-  border-bottom: solid #c1fff3;
+  border-bottom: 1px solid #A3D6D4;
   font-size: 24px;
+  padding-bottom: 5px;
   margin-bottom: 10px;
 `;
 
@@ -43,6 +47,15 @@ export const Name = styled.h1`
 export const Label = styled.span`
   margin: 0px;
   font-size: 20px;
+`;
+ 
+export const Image = styled.img`
+height: 200px;
+width: 300px;
+background-size: contain;
+background-repeat: no-repeat;
+background-image: url(${Computer});
+display: inline;
 `;
 
 export const ContactsContainer = styled.div`
@@ -82,6 +95,14 @@ export const Summary = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 `;
+
+export const Date = styled.span`
+color: #A3D6D4;
+font-size: 12px; 
+`;
+
+
+
 
 export const Middle = styled.div`
   display: flex;

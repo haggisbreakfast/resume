@@ -28,6 +28,7 @@ import {
   Skills,
   Education,
   Contact,
+  Image
 } from './Components';
 
 library.add(faEnvelope, faPhone, faMusic, fab);
@@ -43,6 +44,8 @@ const App = (props: AppProps) => {
       <Top>
         <NameContainer>
           <Name>{resume.basics.name}</Name>
+          {/* <Image/> */}
+
           <Label>{resume.basics.label}</Label>
         </NameContainer>
         <ContactsContainer>
