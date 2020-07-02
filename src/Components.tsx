@@ -2,46 +2,53 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import  Computer  from './vintage-computer-removebg-preview.png';
-import Curls from './curve-11.1s-1084px.svg';
+import Curls from './Fluid-10s-1440px.svg';
+import Computer from './vintage-computer-removebg-preview.svg';
+import Me from './portrait.jpg';
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
   body {
     font-family: 'Roboto Mono', monospace;
       color: grey;
       margin: auto;
-      background: #F1E9CB;
+      background: #d3d3d3;
 
   }
 `;
 
 export const Top = styled.div`
-  background: #A3D6D4;
+  background: #364EB9;
   background-image: url(${Curls});
+  background-position: top 70%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  color: #36454f;
+  color: #d3d3d3;
   padding: 60px 20px 120px 20px;
 `;
 
 export const Header = styled.h3`
   color: #36454f;
   font-weight: 400;
-  border-bottom: 1px solid #A3D6D4;
-  font-size: 24px;
+  border-bottom: 1px solid #364EB9;
+  font-size: 32px;
   padding-bottom: 5px;
   margin-bottom: 10px;
 `;
-
+export const NameImageContainer = styled.div`
+  display: flex;
+  
+`;
 export const NameContainer = styled.div`
   align-items: flex-start;
-  padding: 10px 0px 50px 0px;
+  padding: 10px 0px 0px 0px;
 `;
 
 export const Name = styled.h1`
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 400;
   margin: 0px;
+  
 `;
 
 export const Label = styled.span`
@@ -49,19 +56,24 @@ export const Label = styled.span`
   font-size: 20px;
 `;
  
-export const Image = styled.img`
-height: 200px;
-width: 300px;
-background-size: contain;
+export const Image = styled.div`
+height: 18em;
+width: 18em;
+fill: yellow;
+/* border: 5px solid #fefae0; */
+/* border-bottom: 14px solid #fefae0; */
+/* border: 2px dotted #fefae0; */
+background-size: 100%;
 background-repeat: no-repeat;
+background-position: 0px 50px;
 background-image: url(${Computer});
-display: inline;
 `;
 
 export const ContactsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100px;
+  max-height: 100px;
+  padding-top: 3em;
 `;
 
 export const ContactContainer = styled.div`
@@ -76,7 +88,7 @@ export const ContactMethod = styled.span`
 `;
 
 export const ContactLink = styled.a`
-  color: #36454f;
+  color: #d3d3d3;
   padding-left: 10px;
   text-decoration: none;
   &:hover {

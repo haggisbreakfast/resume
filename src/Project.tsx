@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ResumeProject } from './resume';
 import { Date } from './Components';
+import  Computer  from './vintage-computer-removebg-preview.png';
 
 const ProjectContainer = styled.div`
   margin-bottom: 10px;

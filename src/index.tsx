@@ -44,9 +44,8 @@ const App = (props: AppProps) => {
       <Top>
         <NameContainer>
           <Name>{resume.basics.name}</Name>
-          {/* <Image/> */}
-
           <Label>{resume.basics.label}</Label>
+          <Image/>
         </NameContainer>
         <ContactsContainer>
           <Contact
@@ -66,6 +65,7 @@ const App = (props: AppProps) => {
             isLink
           />
         </ContactsContainer>
+
       </Top>
       <Summary>
         <Header>About Me</Header>
