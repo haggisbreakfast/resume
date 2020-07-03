@@ -13,11 +13,12 @@ const TitleContainer = styled.div`
 const Company = styled.span`
   font-size: 18px;
   font-weight: 400;
-  color: rgb(71, 71, 71);
+  color: #101518;
 `;
 
 const Position = styled.span`
   font-style: italic;
+  color: #101518;
 `;
 
 const DateContainer = styled.div`

@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
   body {
     font-family: 'Roboto Mono', monospace;
-      color: grey;
+      color: #36454F;
       margin: auto;
       background: #d3d3d3;
 
@@ -107,7 +107,7 @@ export const ContactIcon = styled(FontAwesomeIcon)`
 
 export const Summary = styled.div`
   font-size: 16px;
-  color: grey;
+  color: #36454F;
   padding-left: 20px;
   padding-right: 20px;
 `;

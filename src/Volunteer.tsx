@@ -27,16 +27,16 @@ const Organization = styled.span`
   width: 75%;
   font-weight: 400;
   font-size: 18px;
-  color: rgb(71, 71, 71);
+  color: #101518;
+
 `;
 
 const Position = styled.span`
   font-style: italic;
+    color: #101518;
+
 `;
 
-const StartDate = styled.span``;
-
-const EndDate = styled.span``;
 
 const Summary = styled.span`
   margin-top: 5px;

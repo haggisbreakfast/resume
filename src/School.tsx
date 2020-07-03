@@ -30,7 +30,8 @@ const Institution = styled.span`
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 0px;
-  color: rgb(71, 71, 71);
+  color: #101518;
+
 `;
 
 const Program = styled.span`

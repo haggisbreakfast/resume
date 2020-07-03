@@ -3,8 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
 
 // local imports
 import { ResumeProject } from './resume';
@@ -28,7 +26,7 @@ const ProjectTitle = styled.div`
 
 const ProjectName = styled.a`
   font-size: 20px;
-  color: rgb(71, 71, 71);
+  color: #101518;
   text-decoration: none;
   &:visited {
     color: rgb(71, 71, 71);
@@ -44,11 +42,12 @@ const ProjectSummary = styled.span``;
 const ProjectTechStackContainer = styled.div`
 display: flex;
 `;
-const ProjectTech = styled(FontAwesomeIcon)`
+const ProjectTech = styled.span`
 font-size: 14px; 
 margin-right: 5px;
 padding-right: 5px;
-
+color: #364EB9;
+border-right: 1px solid teal;
 `;
 type ProjectProps = {
   project: ResumeProject;
@@ -67,7 +66,9 @@ export const Project = (props: ProjectProps) => {
       <ProjectSummary>{project.summary}</ProjectSummary>
       <ProjectTechStackContainer>
         {project.techstack.map((t, index) => {
-          <ProjectTech icon={['fab', t]} key={index}/>
+       return (
+          <ProjectTech key={index}>{t}</ProjectTech>
+       );
         })}
      
       </ProjectTechStackContainer>
