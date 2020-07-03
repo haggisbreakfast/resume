@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone, faMusic, faFolderOpen, faSmile, faHistory, faGraduationCap, faCode  } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faMusic, faFolderOpen, faSmile, faHistory, faGraduationCap, faCode, faLocationArrow  } from '@fortawesome/free-solid-svg-icons';
 
 import { resume, Resume } from './resume';
 import { Project } from './Project';
@@ -56,19 +56,23 @@ const App = (props: AppProps) => {
             isLink
           />
           <Contact item={`tel:${resume.basics.phone}`} icon="phone" text="604.813.1948" isLink />
-          <Contact item={resume.basics.github} icon={['fab', 'github']} text="github" isLink>
-            github
-          </Contact>
+          <Contact item={resume.basics.github} icon={['fab', 'github']} text="github" isLink />
           <Contact
             item={resume.basics.linkedin}
             icon={['fab', 'linkedin']}
             text="linkedin"
             isLink
           />
+           <Contact
+            item={resume.basics.location}
+            icon={faLocationArrow}
+            text="Vancouver, BC"
+           
+          />
         </ContactsContainer>
 
       </Top>
-      <Summary>
+      <Summary> 
         <Header>About Me<SectionIcon icon={faSmile} />
 </Header>
         {resume.basics.summary}

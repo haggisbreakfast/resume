@@ -5,6 +5,7 @@ export type ResumeBasics = {
   phone: string;
   github: string;
   linkedin: string;
+  location: string;
   summary: string;
 };
 
@@ -29,7 +30,7 @@ export type ResumeProject = {
   date: string;
   link: string;
   summary: string;
-  techstack: any[];
+  techstack: string[];
 };
 
 export type ResumeSkill = {
@@ -62,6 +63,7 @@ export const resume: Resume = {
     phone: '+16048131948',
     github: 'http://github.com/haggisbreakfast',
     linkedin: 'http://linkedin.com/in/lindsayjanestewart',
+    location: 'Vancouver, BC',
     summary:
       "I am a Web Developer with a passion for creating sites and applications that are equal parts accessible, intuitive, and attractive. I am an adept and determined problem-solver, and a strong communicator with a love for creative collaboration.",
   },

@@ -39,6 +39,7 @@ const ProjectName = styled.a`
 
 
 const ProjectSummary = styled.span``;
+
 const ProjectTechStackContainer = styled.div`
 display: flex;
 `;
@@ -47,7 +48,7 @@ font-size: 14px;
 margin-right: 5px;
 padding-right: 5px;
 color: #364EB9;
-border-right: 1px solid teal;
+border-right: 1px solid #36454F;
 `;
 type ProjectProps = {
   project: ResumeProject;

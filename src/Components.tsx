@@ -77,23 +77,20 @@ export const ContactsContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-height: 100px;
-  /* padding-top: 3em; */
 `;
 
 export const ContactContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 150px;
+  padding: 5px;
 `;
 
 export const ContactMethod = styled.span`
-  padding: 10px;
 `;
 
 export const ContactLink = styled.a`
   color: #d3d3d3;
-  padding-left: 10px;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
