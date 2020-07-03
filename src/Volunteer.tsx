@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+// local imports
 import { ResumeVolunteer } from './resume';
-import { Date, Header } from './Components';
+import { Date, Header, SectionIcon } from './Components';
 
 const VolunteerContainer = styled.div`
   display: flex;
@@ -48,7 +50,7 @@ export const Volunteer = (props: VolunteerProps) => {
   const { volunteer } = props;
   return (
     <VolunteerContainer>
-      <Header>Volunteer</Header>
+      <Header>Volunteer<SectionIcon icon={faHandsHelping} /></Header>
       <VolunteerTitle>
         <Organization>{volunteer.organization}</Organization>
         <DateContainer>

@@ -29,7 +29,7 @@ export type ResumeProject = {
   date: string;
   link: string;
   summary: string;
-  techstack: string[];
+  techstack: any[];
 };
 
 export type ResumeSkill = {
@@ -122,8 +122,7 @@ export const resume: Resume = {
     link: 'http://carineredmond.com/',
     summary: 'A collaborative, customized site built by Glance for a clients PR business.',
     techstack: [
-      'code',
-      'code'
+      'github'
     ]
   },
     {     

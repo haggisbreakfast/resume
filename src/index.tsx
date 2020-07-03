@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone, faMusic } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faMusic, faFolderOpen, faSmile, faHistory, faGraduationCap, faCode  } from '@fortawesome/free-solid-svg-icons';
 
 import { resume, Resume } from './resume';
 import { Project } from './Project';
@@ -69,20 +69,20 @@ const App = (props: AppProps) => {
 
       </Top>
       <Summary>
-        <Header>About Me</Header>
-        <SectionIcon icon="phone" />
+        <Header>About Me<SectionIcon icon={faSmile} />
+</Header>
         {resume.basics.summary}
       </Summary>
       <Middle>
         <LeftMiddle>
           <Projects>
-            <Header>Projects</Header>
+            <Header>Projects<SectionIcon icon={faFolderOpen} /></Header>
             {resume.projects.map(p => {
               return <Project project={p} />;
             })}
           </Projects>
           <Work>
-            <Header>Employment</Header>
+            <Header>Employment<SectionIcon icon={faHistory} /></Header>
             {resume.work.map(w => {
               return <Job job={w} />;
             })}
@@ -90,13 +90,13 @@ const App = (props: AppProps) => {
         </LeftMiddle>
         <RightMiddle>
           <Skills>
-            <Header>Skills</Header>
+            <Header>Skills<SectionIcon icon={faCode} /></Header>
             {resume.skills.map(s => {
               return <Skill skill={s} />;
             })}
           </Skills>
           <Education>
-            <Header>Education</Header>
+            <Header>Education<SectionIcon icon={faGraduationCap} /> </Header>
             {resume.education.map(e => {
               return <School school={e} />;
             })}

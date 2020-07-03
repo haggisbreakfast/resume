@@ -37,8 +37,8 @@ export const Header = styled.h3`
 
 export const SectionIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;
-  font-size: 14px;
-  color: black;
+  font-size: 22px;
+  padding-left: 12px;
 `;
 
 export const NameImageContainer = styled.div`
@@ -113,7 +113,7 @@ export const Summary = styled.div`
 `;
 
 export const Date = styled.span`
-color: #A3D6D4;
+color: #364EB9;
 font-size: 12px; 
 `;
 

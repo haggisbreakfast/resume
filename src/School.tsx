@@ -1,7 +1,11 @@
+// third party imports
 import React from 'react';
 import styled from 'styled-components';
+
+// local imports
 import { ResumeEducation } from './resume';
 import { Date} from './Components';
+
 
 const EducationContainer = styled.div``;
 

@@ -1,8 +1,14 @@
+// third party imports
 import React from 'react';
 import styled from 'styled-components';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+// local imports
 import { ResumeProject } from './resume';
 import { Date } from './Components';
-import  Computer  from './vintage-computer-removebg-preview.png';
 
 const ProjectContainer = styled.div`
   margin-bottom: 10px;
@@ -38,9 +44,8 @@ const ProjectSummary = styled.span``;
 const ProjectTechStackContainer = styled.div`
 display: flex;
 `;
-const ProjectTechStack = styled.span`
+const ProjectTech = styled(FontAwesomeIcon)`
 font-size: 14px; 
-border-right: 1px solid teal;
 margin-right: 5px;
 padding-right: 5px;
 
@@ -61,13 +66,10 @@ export const Project = (props: ProjectProps) => {
       </ProjectTitle>
       <ProjectSummary>{project.summary}</ProjectSummary>
       <ProjectTechStackContainer>
-      {project.techstack.map((t, index) => { return (
-            
-              <ProjectTechStack key={index}>
-                {t}
-              </ProjectTechStack>
-      )
-      })}
+        {project.techstack.map((t, index) => {
+          <ProjectTech icon={['fab', t]} key={index}/>
+        })}
+     
       </ProjectTechStackContainer>
 
     </ProjectContainer>
