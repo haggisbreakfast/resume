@@ -28,7 +28,8 @@ import {
   Skills,
   Education,
   Contact,
-  Image
+  Image,
+  SectionIcon
 } from './Components';
 
 library.add(faEnvelope, faPhone, faMusic, fab);
@@ -69,6 +70,7 @@ const App = (props: AppProps) => {
       </Top>
       <Summary>
         <Header>About Me</Header>
+        <SectionIcon icon="phone" />
         {resume.basics.summary}
       </Summary>
       <Middle>

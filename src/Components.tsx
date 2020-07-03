@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import Curls from './Fluid-10s-1440px.svg';
 import Computer from './vintage-computer-removebg-preview.svg';
-import Me from './portrait.jpg';
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
   body {
@@ -19,22 +18,29 @@ export const GlobalStyle = createGlobalStyle`
 export const Top = styled.div`
   background: #364EB9;
   background-image: url(${Curls});
-  background-position: top 70%;
+  background-position: 0em 0em;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   color: #d3d3d3;
-  padding: 60px 20px 120px 20px;
+  padding: 60px 20px 90px 20px;
 `;
 
 export const Header = styled.h3`
-  color: #36454f;
+  color: #364EB9;
   font-weight: 400;
   border-bottom: 1px solid #364EB9;
   font-size: 32px;
   padding-bottom: 5px;
   margin-bottom: 10px;
 `;
+
+export const SectionIcon = styled(FontAwesomeIcon)`
+  padding-right: 10px;
+  font-size: 14px;
+  color: black;
+`;
+
 export const NameImageContainer = styled.div`
   display: flex;
   
@@ -48,6 +54,7 @@ export const Name = styled.h1`
   font-size: 60px;
   font-weight: 400;
   margin: 0px;
+  color: #83c5be;
   
 `;
 
@@ -57,15 +64,12 @@ export const Label = styled.span`
 `;
  
 export const Image = styled.div`
-height: 18em;
+height: 15em;
 width: 18em;
 fill: yellow;
-/* border: 5px solid #fefae0; */
-/* border-bottom: 14px solid #fefae0; */
-/* border: 2px dotted #fefae0; */
 background-size: 100%;
 background-repeat: no-repeat;
-background-position: 0px 50px;
+background-position: -60px 10px;
 background-image: url(${Computer});
 `;
 
@@ -73,7 +77,7 @@ export const ContactsContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-height: 100px;
-  padding-top: 3em;
+  /* padding-top: 3em; */
 `;
 
 export const ContactContainer = styled.div`
