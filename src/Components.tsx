@@ -94,6 +94,12 @@ export const ContactLink = styled.a`
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    color: #83c5be;
+    .ContactIcon {
+      color: #83c5be;
+      border: 1px solid red;
+
+    }
   }
 `;
 
@@ -166,7 +172,7 @@ export const Contact: React.StatelessComponent<ContactProps> = props => {
   );
   return (
     <ContactContainer>
-      <ContactIcon icon={icon} />
+      <ContactIcon icon={icon} className={'ContactIcon'} />
       {Content}
     </ContactContainer>
   );
