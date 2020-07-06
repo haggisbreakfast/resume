@@ -28,6 +28,7 @@ export type ResumeEducation = {
 export type ResumeProject = {
   name: string;
   date: string;
+  type: string;
   link: string;
   summary: string;
   techstack: string[];
@@ -65,7 +66,7 @@ export const resume: Resume = {
     linkedin: 'http://linkedin.com/in/lindsayjanestewart',
     location: 'Vancouver, BC',
     summary:
-      "I am a Web Developer with a passion for creating sites and applications that are equal parts accessible, intuitive, and attractive. I am an adept and determined problem-solver, and a strong communicator with a love for creative collaboration.",
+      "I am a Web Developer with a passion for creating sites and applications that are equal parts accessible, intuitive, and visually appealing. I am an adept and determined problem-solver, and a strong communicator with a love for creative collaboration.",
   },
   work: [
     {
@@ -74,7 +75,7 @@ export const resume: Resume = {
       startDate: 'Mar 2019',
       endDate: 'current',
       summary:
-        'As Junior Developer for Glance, I specialized in transforming design mock-ups into sleek, responsive, user-friendly websites. This role also entailed troubleshooting and maintaining existing sites, corresponding and collaborating with clients, working in a variety of frameworks and languages, and performing technical research.',
+        'As Junior Developer for Glance, I specialized in transforming design mock-ups into sleek, responsive, user-friendly websites. This role also entailed troubleshooting and maintaining existing sites, corresponding and collaborating with clients, working in a variety of frameworks and languages, and technical research and writing.',
     },
     {
       company: 'SocsDog Co-op',
@@ -121,83 +122,75 @@ export const resume: Resume = {
     { 
     name: 'Carine Redmond',
     date: 'Feb 2020',
+    type: 'collaborative work project',
     link: 'http://carineredmond.com/',
-    summary: 'A collaborative, customized site built by Glance for a clients PR business.',
+    summary: "A customized website built by Glance for a client's PR business.",
     techstack: [
-      'github'
+      'Wordpress', 'php', 'jquery', 'scss'
     ]
   },
+
     {     
-    name: 'Bookery.io homepage',
-    date: 'Dec 2018',
-    link: 'https://bookery.io/',
-    summary: 'summary',
+    name: 'JDa',
+    date: 'July 2019',
+    type: 'collaborative work project',
+    link: 'https://jdarch.ca/',
+    summary: "A dynamic, customized website built by Glance for an architecture company.",
     techstack: [
-      'code',
-      'code'
+      'Wordpress', 'php', 'jquery', 'scss'
+
+    ]
+
+  },
+  {     
+    name: 'Career Works',
+    date: 'May 2019',
+    type: 'collaborative work project',
+    link: 'https://careerworks.ca/',
+    summary: "A dynamic, customized website built by Glance for a career consulting business.",
+    techstack: [
+      'Wordpress', 'php', 'jquery', 'scss'
+
     ]
 
   },
     {
       name: 'Bookery.io homepage',
-      date: 'Dec 2018',
+      date: 'Feb 2019',
       link: 'https://bookery.io/',
+      type: 'collaborative website',
       summary:
-        'Bookery.io is booking software that is currently in production. I built the homepage using ReactJS, Typescript, and Styled-Components.',
+        'A single page site for Bookery.io, a booking software that is currently in production.',
         techstack: [
-          'code',
-          'code'
+          'ReactJS', 'Typescript', 'Styled-Components'
         ]
     
     },
     {
-      name: 'Good Synth (collaborative)',
+      name: 'Good Synth',
+      type: 'collaborative web app',
       date: 'Nov 2018',
       link: 'https://multi-player-piano.herokuapp.com/',
       summary:
-        'Good Synth is an interactive, collaborative Synthesizer Interface, which allows you to make music with all other connected users in real-time! It was built with ReactJS, Web Audio API, Express, WebSockets, JSX, ES6, and SCSS. ',
+        'An interactive Synthesizer Interface, which allows visitors to make music with all other connected users in real-time! Built and presents as final project for graduation form Lighthouse Labs. ',
         techstack: [
-          'code',
-          'code'
+          'ReactJS', 'Web Audio API', 'Express', 'WebSockets', 'JSX', 'ES6', 'SCSS'
         ]
     
     },
     {
       name: 'Chatty App',
       date: 'Nov 2018',
+      type: 'web app',
       link: 'https://github.com/haggisbreakfast/chatty',
       summary:
-        'Chatty App is a simple, single page web app that allows users to chat in real-time. Built with ReactJS, Webpack with Babel, JSX, ES6, WebSockets, and SCSS.',
+        'A simple, single page web app that allows users to chat in real-time. Built and submitted as a project for Lighhouse Labs.',
         techstack: [
-          'code',
-          'code'
+          'ReactJS', 'Webpack with Babel', 'JSX', 'ES6', 'WebSockets', 'SCSS'
         ]
     
     },
-    {
-      name: 'Choo-Chooser (collaborative)',
-      date: 'Oct 2018',
-      link: 'https://github.com/haggisbreakfast/Decision-Maker',
-      summary:
-        'Choo-Chooser is a simple polling web application to aid its users in making (what can be) difficult decisions. Full-stack web application built with HTML, Sass, JS, jQuery, AJAX, EJS, Node, Express, Knex, Mailgun and PostgresSQL',
-        techstack: [
-          'code',
-          'code'
-        ]
-    
-    },
-    {
-      name: 'Tweeter',
-      date: 'Sept 2018',
-      link: 'https://github.com/haggisbreakfast/tweeter',
-      summary:
-        'Tweeter is a simple, single-page Twitter clone, built upon the provided starter code for this project to put my HTML, CSS, JS, jQuery and AJAX front-end skills, as well as my Node, Express and MongoDB back-end skills to work.',
-        techstack: [
-          'code',
-          'code'
-        ]
-    
-    },
+
   ],
 
   skills: [

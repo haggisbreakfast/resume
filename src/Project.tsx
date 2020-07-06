@@ -2,8 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 // local imports
 import { ResumeProject } from './resume';
 import { Date } from './Components';
@@ -15,9 +13,9 @@ const ProjectContainer = styled.div`
 `;
 
 const ProjectTitle = styled.div`
-  margin-bottom: 5px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-weight: 400;
   font-size: 18px;
@@ -28,8 +26,9 @@ const ProjectName = styled.a`
   font-size: 20px;
   color: #101518;
   text-decoration: none;
+  
   &:visited {
-    color: rgb(71, 71, 71);
+    /* color: rgb(71, 71, 71); */
   }
   &:hover {
     text-decoration: underline;
@@ -37,11 +36,19 @@ const ProjectName = styled.a`
 `;
 
 
+const ProjectType = styled.span`
+font-size: 14px; 
+margin-bottom: 5px;
 
-const ProjectSummary = styled.span``;
+
+`;
+const ProjectSummary = styled.span`
+
+`;
 
 const ProjectTechStackContainer = styled.div`
 display: flex;
+flex-wrap: wrap;
 `;
 const ProjectTech = styled.span`
 font-size: 14px; 
@@ -61,9 +68,13 @@ export const Project = (props: ProjectProps) => {
       <ProjectTitle>
         <ProjectName href={project.link} target="_blank">
           {project.name}
+
         </ProjectName>
+
         <Date>{project.date}</Date>
+
       </ProjectTitle>
+        <ProjectType>{project.type}</ProjectType>
       <ProjectSummary>{project.summary}</ProjectSummary>
       <ProjectTechStackContainer>
         {project.techstack.map((t, index) => {
