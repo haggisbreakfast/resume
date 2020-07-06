@@ -119,6 +119,52 @@ export const resume: Resume = {
     },
   ],
   projects: [
+  
+    { 
+      name: 'Personal website',
+      date: 'Jul 2020',
+      type: 'independent project',
+      link: 'http://lindsaystewart.me/',
+      summary: "My personal online resume/portfolio.",
+      techstack: [
+        'ReactJS', 'Typescript', 'Styled-Components'
+
+      ]
+    },
+    { 
+      name: 'Website Accessibility Article',
+      date: 'Apr 2020',
+      type: 'technical writing/research work project',
+      link: 'https://www.glance.digital/website-accessibility-guidelines/',
+      summary: "A blog post about meeting web content accessibility guidelines and the importance of making your wesbsite accessible. Composed for the Glance website.",
+      techstack: [
+        ''
+
+      ]
+    },
+
+    { 
+      name: 'Website Cookie Notice Article',
+      date: 'Mar 2020',
+      type: 'technical writing/research work project',
+      link: 'https://www.glance.digital/cookie-banners-on-canadian-websites/',
+      summary: "A blog post explaining the laws and requirements surrounding website cookie banners and consent. Composed for the Glance website.",
+      techstack: [
+        ''
+
+      ]
+    },
+    { 
+      name: 'Non La',
+      date: 'Mar 2020',
+      type: 'independent project',
+      link: 'https://www.nonlaband.com/',
+      summary: "A single-page website created for a friend's musical project.",
+      techstack: [
+        'ReactJS', 'Typescript', 'Styled-Components'
+
+      ]
+    },
     { 
     name: 'Carine Redmond',
     date: 'Feb 2020',
@@ -132,7 +178,7 @@ export const resume: Resume = {
 
     {     
     name: 'JDa',
-    date: 'July 2019',
+    date: 'Jul 2019',
     type: 'collaborative work project',
     link: 'https://jdarch.ca/',
     summary: "A dynamic, customized website built by Glance for an architecture company.",
@@ -181,7 +227,7 @@ export const resume: Resume = {
     {
       name: 'Chatty App',
       date: 'Nov 2018',
-      type: 'web app',
+      type: 'independent web app',
       link: 'https://github.com/haggisbreakfast/chatty',
       summary:
         'A simple, single page web app that allows users to chat in real-time. Built and submitted as a project for Lighhouse Labs.',

@@ -132,7 +132,6 @@ font-size: 12px;
 export const Middle = styled.div`
   display: flex;
   flex-direction: row;
-  /* padding-left: 20px; */
   padding-right: 25px;
   @media (max-width: 780px) {
     flex-direction: column;

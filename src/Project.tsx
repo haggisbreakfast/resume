@@ -27,9 +27,6 @@ const ProjectName = styled.a`
   color: #101518;
   text-decoration: none;
   
-  &:visited {
-    /* color: rgb(71, 71, 71); */
-  }
   &:hover {
     text-decoration: underline;
   }
@@ -68,11 +65,8 @@ export const Project = (props: ProjectProps) => {
       <ProjectTitle>
         <ProjectName href={project.link} target="_blank">
           {project.name}
-
         </ProjectName>
-
         <Date>{project.date}</Date>
-
       </ProjectTitle>
         <ProjectType>{project.type}</ProjectType>
       <ProjectSummary>{project.summary}</ProjectSummary>
