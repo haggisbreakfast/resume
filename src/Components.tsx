@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Top = styled.div`
   background: #364EB9;
   background-image: url(${Curls});
-  background-position: 0em 0em;
+  background-position: center top
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -54,13 +54,14 @@ export const Name = styled.h1`
   font-size: 60px;
   font-weight: 400;
   margin: 0px;
-  color: #83c5be;
   
 `;
 
 export const Label = styled.span`
   margin: 0px;
   font-size: 20px;
+  color: #83c5be;
+
 `;
  
 export const Image = styled.div`
