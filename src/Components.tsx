@@ -84,6 +84,17 @@ export const ContactContainer = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 5px;
+  &:hover {
+    .ContactLink {
+
+    text-decoration: underline;
+    color: #83c5be;
+    }
+    .ContactIcon {
+      color: #83c5be;
+
+    }
+  }
 `;
 
 export const ContactMethod = styled.span`
@@ -92,20 +103,13 @@ export const ContactMethod = styled.span`
 export const ContactLink = styled.a`
   color: #d3d3d3;
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-    color: #83c5be;
-    .ContactIcon {
-      color: #83c5be;
-      border: 1px solid red;
-
-    }
-  }
+  
 `;
 
 export const ContactIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;
   font-size: 16px;
+  
 `;
 
 export const Summary = styled.div`
@@ -166,7 +170,7 @@ type ContactProps = { icon: IconProp; item: string; text: string; isLink?: boole
 export const Contact: React.StatelessComponent<ContactProps> = props => {
   const { item, text, icon, isLink } = props;
   const Content = isLink ? (
-    <ContactLink href={item}> {text} </ContactLink>
+    <ContactLink className={'ContactLink'}href={item}> {text} </ContactLink>
   ) : (
     <ContactMethod>{text}</ContactMethod>
   );
