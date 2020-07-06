@@ -242,15 +242,15 @@ export const resume: Resume = {
   skills: [
     {
       title: 'Languages',
-      skills: 'Javascript, TypeScript, HTML, CSS, Sass',
+      skills: 'Javascript, TypeScript, PHP, HTML, CSS, SCSS/SASS',
     },
     {
       title: 'Frameworks, Libraries & Environments',
-      skills: 'ReactJS, jQuery, NodeJS, Express, EJS, Styled-Components',
+      skills: 'ReactJS, jQuery, Wordpress, NodeJS, Express, EJS, Styled-Components, Git',
     },
     {
       title: 'Databases',
-      skills: 'PostgreSQL, MongoDB',
+      skills: 'PostgreSQL, MongoDB, MySQL'
     },
   ],
 };
