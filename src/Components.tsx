@@ -84,6 +84,7 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 30%;
   padding: 5px;
   &:hover {
     .ContactLink {
@@ -109,7 +110,7 @@ export const ContactLink = styled.a`
 
 export const ContactIcon = styled(FontAwesomeIcon)`
   padding-right: 10px;
-  font-size: 16px;
+  font-size: 14px;
   
 `;
 
