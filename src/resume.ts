@@ -132,7 +132,7 @@ export const resume: Resume = {
       ]
     },
     {
-      name: 'Web Accessibility Article',
+      name: 'Web Accessibility',
       date: 'Apr 2020',
       type: 'technical writing/research work project',
       link: 'https://www.glance.digital/website-accessibility-guidelines/',
@@ -144,7 +144,7 @@ export const resume: Resume = {
     },
 
     {
-      name: 'Cookie Consent Article',
+      name: 'Cookie Consent',
       date: 'Mar 2020',
       type: 'technical writing/research work project',
       link: 'https://www.glance.digital/cookie-banners-on-canadian-websites/',
