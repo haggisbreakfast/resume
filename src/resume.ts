@@ -119,8 +119,8 @@ export const resume: Resume = {
     },
   ],
   projects: [
-  
-    { 
+
+    {
       name: 'Personal website',
       date: 'Jul 2020',
       type: 'independent project',
@@ -131,7 +131,7 @@ export const resume: Resume = {
 
       ]
     },
-    { 
+    {
       name: 'Web Accessibility Article',
       date: 'Apr 2020',
       type: 'technical writing/research work project',
@@ -143,7 +143,7 @@ export const resume: Resume = {
       ]
     },
 
-    { 
+    {
       name: 'Cookie Consent Article',
       date: 'Mar 2020',
       type: 'technical writing/research work project',
@@ -154,7 +154,7 @@ export const resume: Resume = {
 
       ]
     },
-    { 
+    {
       name: 'Non La',
       date: 'Mar 2020',
       type: 'independent project',
@@ -165,41 +165,53 @@ export const resume: Resume = {
 
       ]
     },
-    { 
-    name: 'Carine Redmond',
-    date: 'Feb 2020',
-    type: 'collaborative work project',
-    link: 'http://carineredmond.com/',
-    summary: "A customized website built by Glance for a client's PR business.",
-    techstack: [
-      'Wordpress', 'php', 'jquery', 'scss'
-    ]
-  },
+    {
+      name: 'Carine Redmond',
+      date: 'Feb 2020',
+      type: 'collaborative work project',
+      link: 'http://carineredmond.com/',
+      summary: "A customized website built by Glance for a client's PR business.",
+      techstack: [
+        'Wordpress', 'php', 'jquery', 'scss'
+      ]
+    },
 
-    {     
-    name: 'JDa',
-    date: 'Jul 2019',
-    type: 'collaborative work project',
-    link: 'https://jdarch.ca/',
-    summary: "A dynamic, customized website built by Glance for an architecture company.",
-    techstack: [
-      'Wordpress', 'php', 'jquery', 'scss'
+    {
+      name: 'JDa',
+      date: 'Jul 2019',
+      type: 'collaborative work project',
+      link: 'https://jdarch.ca/',
+      summary: "A dynamic, customized website built by Glance for an architecture company.",
+      techstack: [
+        'Wordpress', 'php', 'jquery', 'scss'
 
-    ]
+      ]
 
-  },
-  {     
-    name: 'Career Works',
-    date: 'May 2019',
-    type: 'collaborative work project',
-    link: 'https://careerworks.ca/',
-    summary: "A dynamic, customized website built by Glance for a career consulting business.",
-    techstack: [
-      'Wordpress', 'php', 'jquery', 'scss'
+    },
+    {
+      name: 'Lepp Construction',
+      date: 'Jun 2019',
+      type: 'collaborative work project',
+      link: '  https://www.leppconstruction.com',
+      summary: "A dynamic, customized website built by Glance for a construction company.",
+      techstack: [
+        'Wordpress', 'php', 'jquery', 'scss'
 
-    ]
+      ]
 
-  },
+    },
+    {
+      name: 'Career Works',
+      date: 'May 2019',
+      type: 'collaborative work project',
+      link: 'https://careerworks.ca/',
+      summary: "A dynamic, customized website built by Glance for a career consulting business.",
+      techstack: [
+        'Wordpress', 'php', 'jquery', 'scss'
+
+      ]
+
+    },
     {
       name: 'Bookery.io homepage',
       date: 'Feb 2019',
@@ -207,10 +219,10 @@ export const resume: Resume = {
       type: 'collaborative website',
       summary:
         'A single page site for Bookery.io, a booking software that is currently in production.',
-        techstack: [
-          'ReactJS', 'Typescript', 'Styled-Components'
-        ]
-    
+      techstack: [
+        'ReactJS', 'Typescript', 'Styled-Components'
+      ]
+
     },
     {
       name: 'Good Synth',
@@ -219,10 +231,10 @@ export const resume: Resume = {
       link: 'https://multi-player-piano.herokuapp.com/',
       summary:
         'An interactive Synthesizer Interface, which allows visitors to make music with all other connected users in real-time! Built and presents as final project for graduation form Lighthouse Labs. ',
-        techstack: [
-          'ReactJS', 'Web Audio API', 'Express', 'WebSockets', 'JSX', 'ES6', 'SCSS'
-        ]
-    
+      techstack: [
+        'ReactJS', 'Web Audio API', 'Express', 'WebSockets', 'JSX', 'ES6', 'SCSS'
+      ]
+
     },
     {
       name: 'Chatty App',
@@ -231,10 +243,10 @@ export const resume: Resume = {
       link: 'https://github.com/haggisbreakfast/chatty',
       summary:
         'A simple, single page web app that allows users to chat in real-time. Built and submitted as a project for Lighhouse Labs.',
-        techstack: [
-          'ReactJS', 'Webpack with Babel', 'JSX', 'ES6', 'WebSockets', 'SCSS'
-        ]
-    
+      techstack: [
+        'ReactJS', 'Webpack with Babel', 'JSX', 'ES6', 'WebSockets', 'SCSS'
+      ]
+
     },
 
   ],

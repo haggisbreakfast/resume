@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone, faMusic, faFolderOpen, faSmile, faHistory, faGraduationCap, faCode, faLocationArrow  } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faMusic, faFolderOpen, faSmile, faHistory, faGraduationCap, faCode, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 
 import { resume, Resume } from './resume';
 import { Project } from './Project';
@@ -46,7 +46,7 @@ const App = (props: AppProps) => {
         <NameContainer>
           <Name>{resume.basics.name}</Name>
           <Label>{resume.basics.label}</Label>
-          <Image/>
+          <Image />
         </NameContainer>
         <ContactsContainer>
           <Contact
@@ -63,46 +63,46 @@ const App = (props: AppProps) => {
             text="linkedin"
             isLink
           />
-           <Contact
+          <Contact
             item={resume.basics.location}
             icon={faLocationArrow}
             text="Vancouver, BC"
-           
+
           />
         </ContactsContainer>
 
       </Top>
-      <Summary> 
+      <Summary>
         <Header>About Me<SectionIcon icon={faSmile} />
-</Header>
+        </Header>
         {resume.basics.summary}
       </Summary>
       <Middle>
         <LeftMiddle>
           <Projects>
             <Header>Projects<SectionIcon icon={faFolderOpen} /></Header>
-            {resume.projects.map(p => {
-              return <Project project={p} />;
+            {resume.projects.map((p, index) => {
+              return <Project key={index} project={p} />;
             })}
           </Projects>
           <Work>
             <Header>Employment<SectionIcon icon={faHistory} /></Header>
-            {resume.work.map(w => {
-              return <Job job={w} />;
+            {resume.work.map((w, index) => {
+              return <Job key={index} job={w} />;
             })}
           </Work>
         </LeftMiddle>
         <RightMiddle>
           <Skills>
             <Header>Skills<SectionIcon icon={faCode} /></Header>
-            {resume.skills.map(s => {
-              return <Skill skill={s} />;
+            {resume.skills.map((s, index) => {
+              return <Skill key={index} skill={s} />;
             })}
           </Skills>
           <Education>
             <Header>Education<SectionIcon icon={faGraduationCap} /> </Header>
-            {resume.education.map(e => {
-              return <School school={e} />;
+            {resume.education.map((e, index) => {
+              return <School key={index} school={e} />;
             })}
           </Education>
           <Volunteer volunteer={resume.volunteer} />
