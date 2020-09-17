@@ -155,17 +155,6 @@ export const resume: Resume = {
       ]
     },
     {
-      name: 'Non La',
-      date: 'Mar 2020',
-      type: 'independent project',
-      link: 'https://www.nonlaband.com/',
-      summary: "A single-page website created for a friend's musical project.",
-      techstack: [
-        'ReactJS', 'Typescript', 'Styled-Components'
-
-      ]
-    },
-    {
       name: 'Carine Redmond',
       date: 'Feb 2020',
       type: 'collaborative work project',
