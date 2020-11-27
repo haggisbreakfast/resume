@@ -132,6 +132,17 @@ export const resume: Resume = {
       ]
     },
     {
+      name: 'The Moody Rentals',
+      date: 'Apr 2020',
+      type: 'collaborative work project',
+      link: 'https://themoodyrentals.ca/',
+      summary: "Landing page built by Glance for a home rental company in Port Moody.",
+      techstack: [
+        'Wordpress', 'php', 'jquery', 'scss'
+
+      ]
+    },
+    {
       name: 'Web Accessibility',
       date: 'Apr 2020',
       type: 'technical writing/research work project',
@@ -152,6 +163,16 @@ export const resume: Resume = {
       techstack: [
         ''
 
+      ]
+    },
+    {
+      name: 'Curranne Labercane',
+      date: 'Feb 2020',
+      type: 'collaborative work project',
+      link: 'https://www.currannelabercane.com/',
+      summary: "A customized website built by Glance for a client's business.",
+      techstack: [
+        'Wordpress', 'php', 'jquery', 'scss'
       ]
     },
     {
